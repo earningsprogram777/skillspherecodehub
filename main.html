@@ -1,45 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
     <title>Skill Sphere Code Hub | Master • Earn • Grow</title>
-    <!-- Font Awesome 6 (free) -->
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts: Poppins + Montserrat -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap"
-        rel="stylesheet">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7178917402710765"
-     crossorigin="anonymous"></script>
-
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <!-- Ads (kept as original) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7178917402710765" crossorigin="anonymous"></script>
+    <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
     <meta name="google-adsense-account" content="ca-pub-7178917402710765">
-    <!-- Animate.css (light) -->
+    <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <style>
-        /* ----- MODERN CSS RESET & VARIABLES (Skill Sphere theme) ----- */
+        /* ----- MODERN RESET & VARIABLES (refreshed) ----- */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
-
         :root {
             --primary: #3B1E8C;
-            /* deep cosmic purple */
             --primary-light: #6D38C2;
             --primary-soft: #8A6AE2;
             --accent: #FF6B4A;
-            /* vibrant coral */
             --accent-soft: #FF8A6A;
             --secondary: #00C9B7;
-            /* fresh teal */
             --dark: #0B0B1A;
             --dark-light: #1A1A2F;
             --gray: #B2B2D0;
@@ -51,16 +40,11 @@
             --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.35);
             --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.5);
             --glow-purple: 0 0 25px rgba(106, 56, 194, 0.35);
-            --glow-coral: 0 0 25px rgba(255, 107, 74, 0.3);
             --radius-card: 28px;
             --radius-btn: 50px;
             --transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             background-color: var(--dark);
             background-image: radial-gradient(circle at 5% 10%, rgba(59, 30, 140, 0.25) 0%, transparent 45%),
@@ -69,726 +53,177 @@
             line-height: 1.7;
             overflow-x: hidden;
         }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
+        section { padding: 100px 0; position: relative; }
 
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 28px;
-        }
-
-        section {
-            padding: 110px 0;
-            position: relative;
-        }
-
-        /* ----- GLASS & CARD STYLES ----- */
         .glass-deep {
             background: rgba(10, 10, 25, 0.75);
             backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.06);
             border-radius: var(--radius-card);
-            box-shadow: var(--shadow-md);
         }
-
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 16px 36px;
-            border-radius: var(--radius-btn);
-            font-weight: 600;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
-            background-size: 200% auto;
-            letter-spacing: 0.5px;
-            box-shadow: var(--shadow-sm);
+            display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+            padding: 16px 36px; border-radius: var(--radius-btn); font-weight: 600; font-size: 16px;
+            border: none; cursor: pointer; transition: var(--transition); position: relative;
+            overflow: hidden; background-size: 200% auto; letter-spacing: 0.5px; box-shadow: var(--shadow-sm);
         }
+        .btn-primary { background: var(--gradient-brand); color: white; }
+        .btn-primary:hover { background-position: right center; transform: translateY(-5px) scale(1.02); box-shadow: 0 18px 35px rgba(59, 30, 140, 0.5), var(--glow-purple); }
+        .btn-accent { background: var(--gradient-accent); color: white; }
+        .btn-accent:hover { background-position: right center; transform: translateY(-5px); box-shadow: 0 18px 35px rgba(255, 107, 74, 0.4); }
+        .btn-outline { background: transparent; border: 2px solid var(--primary-soft); color: white; }
+        .btn-outline:hover { background: var(--primary); border-color: var(--primary); transform: translateY(-4px); }
 
-        .btn-primary {
-            background: var(--gradient-brand);
-            color: white;
-        }
-
-        .btn-primary:hover {
-            background-position: right center;
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 18px 35px rgba(59, 30, 140, 0.5), var(--glow-purple);
-        }
-
-        .btn-accent {
-            background: var(--gradient-accent);
-            color: white;
-        }
-
-        .btn-accent:hover {
-            background-position: right center;
-            transform: translateY(-5px);
-            box-shadow: 0 18px 35px rgba(255, 107, 74, 0.4);
-        }
-
-        .btn-outline {
-            background: transparent;
-            border: 2px solid var(--primary-soft);
-            color: white;
-        }
-
-        .btn-outline:hover {
-            background: var(--primary);
-            border-color: var(--primary);
-            transform: translateY(-4px);
-        }
-
-        /* ----- HEADER (sleek) ----- */
+        /* header */
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 999;
-            background: rgba(11, 11, 26, 0.9);
-            backdrop-filter: blur(18px);
+            position: fixed; top: 0; width: 100%; z-index: 999;
+            background: rgba(11, 11, 26, 0.9); backdrop-filter: blur(18px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-            transition: var(--transition);
         }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-size: 26px;
-            font-weight: 900;
-            color: white;
-        }
-
-        .logo i {
-            color: var(--accent);
-            font-size: 36px;
-            filter: drop-shadow(0 0 12px rgba(255, 107, 74, 0.5));
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 32px;
-            align-items: center;
-        }
-
-        .nav-links a {
-            font-weight: 500;
-            color: var(--gray);
-            transition: 0.2s;
-            position: relative;
-        }
-
-        .nav-links a:hover {
-            color: white;
-        }
-
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 0; }
+        .logo { display: flex; align-items: center; gap: 12px; font-size: 26px; font-weight: 900; color: white; }
+        .logo i { color: var(--accent); font-size: 36px; filter: drop-shadow(0 0 12px rgba(255, 107, 74, 0.5)); }
+        .nav-links { display: flex; gap: 32px; align-items: center; }
+        .nav-links a { font-weight: 500; color: var(--gray); transition: 0.2s; position: relative; }
+        .nav-links a:hover { color: white; }
         .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -6px;
-            left: 0;
-            width: 0%;
-            height: 3px;
-            background: var(--accent);
-            transition: 0.3s;
-            border-radius: 3px;
+            content: ''; position: absolute; bottom: -6px; left: 0; width: 0%; height: 3px;
+            background: var(--accent); transition: 0.3s; border-radius: 3px;
         }
+        .nav-links a:hover::after { width: 100%; }
+        .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 28px; cursor: pointer; }
 
-        .nav-links a:hover::after {
-            width: 100%;
-        }
+        /* hero */
+        .hero { padding-top: 170px; padding-bottom: 80px; }
+        .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .hero h1 { font-size: 58px; line-height: 1.1; background: linear-gradient(145deg, #FFFFFF, #E0D6FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 24px; }
+        .hero-para { color: var(--gray); font-size: 18px; margin-bottom: 35px; }
+        .hero-stats { display: flex; gap: 30px; margin-top: 45px; flex-wrap: wrap; }
+        .stat-item { background: rgba(26, 26, 47, 0.5); padding: 16px 22px; border-radius: 30px; backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.03); }
+        .stat-number { font-size: 20px; font-weight: 900; background: linear-gradient(145deg, var(--accent), #FFB088); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero-img { background: radial-gradient(circle, rgba(106, 56, 194, 0.2) 0%, transparent 70%); animation: float 7s infinite alternate; }
+        .hero-img img { border-radius: 40px; box-shadow: var(--shadow-lg); width: 100%; border: 1px solid rgba(255, 255, 255, 0.1); }
+        @keyframes float { 0% { transform: translateY(0px); } 100% { transform: translateY(-18px); } }
 
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 28px;
-            cursor: pointer;
-        }
-
-        /* ----- HERO SECTION ----- */
-        .hero {
-            padding-top: 170px;
-            padding-bottom: 80px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            line-height: 1.1;
-            background: linear-gradient(145deg, #FFFFFF, #E0D6FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 24px;
-        }
-
-        .hero-para {
-            color: var(--gray);
-            font-size: 18px;
-            margin-bottom: 35px;
-            font-weight: 300;
-        }
-
-        .hero-stats {
-            display: flex;
-            gap: 40px;
-            margin-top: 45px;
-        }
-
-        .stat-item {
-            background: rgba(26, 26, 47, 0.5);
-            padding: 20px 28px;
-            border-radius: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            transition: 0.2s;
-        }
-
-        .stat-number {
-            font-size: 20px;
-            font-weight: 900;
-            background: linear-gradient(145deg, var(--accent), #FFB088);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .hero-img {
-            background: radial-gradient(circle, rgba(106, 56, 194, 0.2) 0%, transparent 70%);
-            animation: float 7s infinite alternate;
-        }
-
-        .hero-img img {
-            border-radius: 40px;
-            box-shadow: var(--shadow-lg);
-            width: 100%;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            100% {
-                transform: translateY(-18px);
-            }
-        }
-
-        /* ----- SECTION HEADER ----- */
-        .section-header {
-            text-align: center;
-            margin-bottom: 65px;
-        }
-
+        .section-header { text-align: center; margin-bottom: 65px; }
         .section-subtitle {
-            display: inline-block;
-            background: rgba(255, 107, 74, 0.15);
-            padding: 8px 24px;
-            border-radius: 40px;
-            font-size: 20px;
-            font-weight: 600;
-            color: var(--accent);
-            border: 1px solid rgba(255, 107, 74, 0.3);
-            margin-bottom: 18px;
-            letter-spacing: 2px;
+            display: inline-block; background: rgba(255, 107, 74, 0.15); padding: 8px 24px; border-radius: 40px;
+            font-size: 20px; font-weight: 600; color: var(--accent); border: 1px solid rgba(255, 107, 74, 0.3);
+            margin-bottom: 18px; letter-spacing: 2px;
         }
+        .section-header h2 { font-size: 48px; color: white; text-shadow: 0 2px 10px rgba(0,0,0,0.4); }
+        .section-header p { color: var(--gray); max-width: 700px; margin: 0 auto; font-size: 17px; }
 
-        .section-header h2 {
-            font-size: 48px;
-            color: white;
-            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-        }
-
-        .section-header p {
-            color: var(--gray);
-            max-width: 650px;
-            margin: 0 auto;
-            font-size: 17px;
-        }
-
-        /* ----- CARDS GRID (COURSES / BOOKS) ----- */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 35px;
-        }
-
+        /* cards */
+        .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 35px; }
         .product-card {
-            background: rgba(18, 18, 35, 0.8);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: var(--radius-card);
-            overflow: hidden;
-            transition: var(--transition);
-            box-shadow: var(--shadow-sm);
-            padding-bottom: 25px;
+            background: rgba(18, 18, 35, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05);
+            border-radius: var(--radius-card); overflow: hidden; transition: var(--transition);
+            box-shadow: var(--shadow-sm); padding-bottom: 25px;
         }
-
-        .product-card:hover {
-            transform: translateY(-12px);
-            border-color: rgba(106, 56, 194, 0.4);
-            box-shadow: var(--shadow-lg), 0 0 30px rgba(89, 43, 173, 0.25);
-        }
-
-        .card-img {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .card-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.5s;
-        }
-
-        .product-card:hover .card-img img {
-            transform: scale(1.08);
-        }
-
-        .card-content {
-            padding: 30px 25px 15px;
-        }
-
+        .product-card:hover { transform: translateY(-12px); border-color: rgba(106, 56, 194, 0.4); box-shadow: var(--shadow-lg), 0 0 30px rgba(89, 43, 173, 0.25); }
+        .card-img { height: 200px; overflow: hidden; }
+        .card-img img { width: 100%; height: 100%; object-fit: cover; transition: 0.5s; }
+        .product-card:hover .card-img img { transform: scale(1.08); }
+        .card-content { padding: 30px 25px 15px; }
         .icon-badge {
-            width: 60px;
-            height: 60px;
-            background: var(--gradient-brand);
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            color: white;
-            margin-top: -50px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow-md);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            width: 60px; height: 60px; background: var(--gradient-brand); border-radius: 20px;
+            display: flex; align-items: center; justify-content: center; font-size: 28px; color: white;
+            margin-top: -50px; margin-bottom: 20px; box-shadow: var(--shadow-md); border: 1px solid rgba(255,255,255,0.2);
         }
+        .product-card h3 { font-size: 24px; margin-bottom: 8px; color: white; }
+        .price-block { margin: 20px 0 12px; }
+        .old-price { text-decoration: line-through; color: var(--gray); font-size: 18px; margin-right: 12px; }
+        .discount-badge { background: rgba(0, 201, 183, 0.2); color: var(--secondary); padding: 5px 14px; border-radius: 30px; font-size: 15px; font-weight: 600; }
+        .current-price { font-size: 34px; font-weight: 900; color: white; margin-top: 8px; background: linear-gradient(145deg, #FFFFFF, #E0D6FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .validity-badge { background: #2A1E4A; color: #C5B4FF; padding: 8px 16px; border-radius: 40px; font-size: 15px; display: inline-block; margin: 12px 0; border: 1px solid #52409C; }
+        .referral-earnings { background: rgba(0, 0, 0, 0.3); border-radius: 24px; padding: 18px; margin: 20px 0 5px; border-left: 6px solid var(--accent); }
+        .level-grid { display: flex; gap: 16px; margin-top: 10px; flex-wrap: wrap; }
+        .level-item { background: rgba(59, 30, 140, 0.4); padding: 6px 16px; border-radius: 30px; font-size: 14px; font-weight: 600; color: #CFC2FF; }
+        .product-code { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.03); padding: 10px 20px; border-radius: 40px; font-family: 'Courier New', monospace; margin-top: 15px; color: var(--gray); }
 
-        .product-card h3 {
-            font-size: 24px;
-            margin-bottom: 8px;
-            color: white;
+        /* category quick preview */
+        .skill-cloud {
+            display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 30px 0 10px;
         }
-
-        .price-block {
-            margin: 20px 0 12px;
+        .skill-tag {
+            background: #1E1A36; padding: 10px 24px; border-radius: 50px; border: 1px solid #4D3B8C;
+            color: #E0D6FF; font-weight: 500; transition: 0.2s;
         }
+        .skill-tag:hover { background: #3B1E8C; border-color: var(--accent); transform: scale(1.03); }
 
-        .old-price {
-            text-decoration: line-through;
-            color: var(--gray);
-            font-size: 18px;
-            margin-right: 12px;
-        }
+        /* UPI QR, form */
+        .payment-card { max-width: 750px; margin: 0 auto; background: rgba(26, 26, 47, 0.7); backdrop-filter: blur(18px); border-radius: 48px; padding: 50px 40px; border: 1px solid rgba(255, 255, 255, 0.05); text-align: center; }
+        .qr-box { background: white; padding: 18px; display: inline-block; border-radius: 30px; margin: 20px 0; box-shadow: var(--shadow-lg); }
+        .qr-box img { width: 190px; border-radius: 18px; }
+        .upi-block { background: rgba(0, 0, 0, 0.3); padding: 18px 24px; border-radius: 60px; font-size: 26px; font-weight: 600; border: 1px solid rgba(255, 107, 74, 0.3); color: #FFC6B0; margin: 30px 0; font-family: monospace; cursor: pointer; }
 
-        .discount-badge {
-            background: rgba(0, 201, 183, 0.2);
-            color: var(--secondary);
-            padding: 5px 14px;
-            border-radius: 30px;
-            font-size: 15px;
-            font-weight: 600;
-        }
+        .registration-form { background: rgba(16, 16, 35, 0.8); backdrop-filter: blur(16px); border-radius: 48px; padding: 55px; border: 1px solid rgba(255, 255, 255, 0.05); margin-top: 40px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; color: #cfcfec; font-weight: 500; }
+        .form-control { width: 100%; padding: 16px 20px; background: rgba(0, 0, 0, 0.35); border: 1.5px solid rgba(255,255,255,0.05); border-radius: 22px; color: white; font-size: 16px; }
+        .form-control:focus { border-color: var(--primary-soft); outline: none; background: rgba(0,0,0,0.6); box-shadow: 0 0 0 3px rgba(106,56,194,0.2); }
 
-        .current-price {
-            font-size: 34px;
-            font-weight: 900;
-            color: white;
-            margin-top: 8px;
-            background: linear-gradient(145deg, #FFFFFF, #E0D6FF);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        .referral-glow-card { background: linear-gradient(145deg, #1C1C35, #151525); padding: 35px; border-radius: 40px; border: 2px dashed var(--accent); text-align: center; margin-top: 35px; }
+        .ref-code-big { font-size: 42px; font-weight: 900; letter-spacing: 8px; background: black; display: inline-block; padding: 15px 35px; border-radius: 60px; color: var(--accent); border: 2px solid var(--accent); margin: 20px 0; font-family: monospace; box-shadow: 0 0 30px rgba(255,107,74,0.3); }
 
-        .referral-earnings {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 24px;
-            padding: 18px;
-            margin: 20px 0 5px;
-            border-left: 6px solid var(--accent);
-        }
+        .ref-levels { display: grid; grid-template-columns: repeat(3,1fr); gap: 30px; margin-top: 50px; }
+        .level-card { background: rgba(30,30,50,0.8); backdrop-filter: blur(10px); padding: 40px 25px; border-radius: 40px; border: 1px solid rgba(255,255,255,0.03); transition: 0.2s; text-align: center; }
+        .level-card:hover { border-color: var(--primary-soft); transform: scale(1.03); background: rgba(43,43,70,0.9); }
+        .level-num { font-size: 60px; font-weight: 900; background: var(--gradient-brand); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .earning-highlight { font-size: 32px; font-weight: 800; color: white; }
 
-        .level-grid {
-            display: flex;
-            gap: 16px;
-            margin-top: 10px;
-        }
+        .calculator-panel { background: rgba(20,20,40,0.8); border-radius: 48px; padding: 45px; backdrop-filter: blur(18px); }
+        .calc-result { font-size: 58px; font-weight: 900; background: linear-gradient(145deg, #FF8A6A, #FFB088); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin: 20px 0; }
 
-        .level-item {
-            background: rgba(59, 30, 140, 0.4);
-            padding: 6px 12px;
-            border-radius: 30px;
-            font-size: 14px;
-            font-weight: 600;
-            color: #CFC2FF;
-        }
+        footer { background: #070712; padding-top: 80px; padding-bottom: 30px; border-top: 1px solid rgba(255,107,74,0.15); }
+        .footer-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 50px; }
+        .social-icon { background: rgba(255,255,255,0.04); width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; color: white; margin-right: 12px; transition: 0.2s; }
+        .social-icon:hover { background: var(--accent); transform: translateY(-5px); }
 
-        .product-code {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.03);
-            padding: 10px 20px;
-            border-radius: 40px;
-            font-family: 'Courier New', monospace;
-            margin-top: 15px;
-            color: var(--gray);
-        }
-
-        /* ----- PAYMENT SECTION ----- */
-        .payment-card {
-            max-width: 750px;
-            margin: 0 auto;
-            background: rgba(26, 26, 47, 0.7);
-            backdrop-filter: blur(18px);
-            border-radius: 48px;
-            padding: 50px 40px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            text-align: center;
-        }
-
-        .qr-box {
-            background: white;
-            padding: 18px;
-            display: inline-block;
-            border-radius: 30px;
-            margin: 20px 0;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .qr-box img {
-            width: 190px;
-            border-radius: 18px;
-        }
-
-        .upi-block {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 18px 24px;
-            border-radius: 60px;
-            font-size: 26px;
-            font-weight: 600;
-            letter-spacing: 2px;
-            border: 1px solid rgba(255, 107, 74, 0.3);
-            color: #FFC6B0;
-            margin: 30px 0;
-            font-family: monospace;
-            cursor: pointer;
-        }
-
-        /* ----- FORM & REFERRAL DISPLAY ----- */
-        .registration-form {
-            background: rgba(16, 16, 35, 0.8);
-            backdrop-filter: blur(16px);
-            border-radius: 48px;
-            padding: 55px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            margin-top: 40px;
-        }
-
-        .form-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 28px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: #cfcfec;
-            font-weight: 500;
-        }
-
-        .form-control {
-            width: 100%;
-            padding: 16px 20px;
-            background: rgba(0, 0, 0, 0.35);
-            border: 1.5px solid rgba(255, 255, 255, 0.05);
-            border-radius: 22px;
-            color: white;
-            font-size: 16px;
-            transition: 0.2s;
-        }
-
-        .form-control:focus {
-            border-color: var(--primary-soft);
-            outline: none;
-            background: rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 0 3px rgba(106, 56, 194, 0.2);
-        }
-
-        .referral-glow-card {
-            background: linear-gradient(145deg, #1C1C35, #151525);
-            padding: 35px;
-            border-radius: 40px;
-            border: 2px dashed var(--accent);
-            text-align: center;
-            margin-top: 35px;
-        }
-
-        .ref-code-big {
-            font-size: 42px;
-            font-weight: 900;
-            letter-spacing: 8px;
-            background: black;
-            display: inline-block;
-            padding: 15px 35px;
-            border-radius: 60px;
-            color: var(--accent);
-            border: 2px solid var(--accent);
-            margin: 20px 0;
-            font-family: monospace;
-            box-shadow: 0 0 30px rgba(255, 107, 74, 0.3);
-        }
-
-        /* ----- REFERRAL LEVEL CARDS (updated earnings) ----- */
-        .ref-levels {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-top: 50px;
-        }
-
-        .level-card {
-            background: rgba(30, 30, 50, 0.8);
-            backdrop-filter: blur(10px);
-            padding: 40px 25px;
-            border-radius: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            transition: 0.2s;
-            text-align: center;
-        }
-
-        .level-card:hover {
-            border-color: var(--primary-soft);
-            transform: scale(1.03);
-            background: rgba(43, 43, 70, 0.9);
-        }
-
-        .level-num {
-            font-size: 60px;
-            font-weight: 900;
-            background: var(--gradient-brand);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .earning-highlight {
-            font-size: 32px;
-            font-weight: 800;
-            color: white;
-        }
-
-        /* ----- CALCULATOR (updated based on packs) ----- */
-        .calculator-panel {
-            background: rgba(20, 20, 40, 0.8);
-            border-radius: 48px;
-            padding: 45px;
-            backdrop-filter: blur(18px);
-        }
-
-        .calc-result {
-            font-size: 58px;
-            font-weight: 900;
-            background: linear-gradient(145deg, #FF8A6A, #FFB088);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 20px 0;
-        }
-
-        /* ----- FOOTER ----- */
-        footer {
-            background: #070712;
-            padding-top: 80px;
-            padding-bottom: 30px;
-            border-top: 1px solid rgba(255, 107, 74, 0.15);
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 50px;
-        }
-
-        .social-icon {
-            background: rgba(255, 255, 255, 0.04);
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            margin-right: 12px;
-            transition: 0.2s;
-        }
-
-        .social-icon:hover {
-            background: var(--accent);
-            transform: translateY(-5px);
-        }
-
-        /* ----- RESPONSIVE ----- */
-        @media (max-width: 1000px) {
-
-            .hero-grid,
-            .form-grid,
-            .footer-grid,
-            .ref-levels {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                position: fixed;
-                top: 80px;
-                left: -100%;
-                width: 100%;
-                height: 100vh;
-                background: #0B0B1A;
-                flex-direction: column;
-                padding: 40px;
-                transition: 0.4s;
-            }
-
-            .nav-links.active {
-                left: 0;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 44px;
-            }
-        }
-
-        @media (max-width: 550px) {
-            .container {
-                padding: 0 20px;
-            }
-
-            .section-header h2 {
-                font-size: 36px;
-            }
-
-            .payment-card {
-                padding: 30px 20px;
-            }
-        }
-
-        /* ----- MISC ----- */
         .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            width: 68px;
-            height: 68px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 36px;
-            color: white;
-            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-            transition: 0.2s;
-            border: 2px solid rgba(255, 255, 255, 0.2);
+            position: fixed; bottom: 30px; right: 30px; background: #25D366; width: 68px; height: 68px;
+            border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 36px;
+            color: white; box-shadow: 0 10px 25px rgba(37,211,102,0.4); z-index: 999; transition: 0.2s;
+            border: 2px solid rgba(255,255,255,0.2);
         }
+        .whatsapp-float:hover { transform: scale(1.1); background: #20b859; }
 
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            background: #20b859;
-        }
+        .notification { position: fixed; top: 100px; right: 20px; background: #0F0F1E; border-left: 10px solid var(--accent); padding: 18px 30px; border-radius: 16px; color: white; font-weight: 500; box-shadow: var(--shadow-lg); z-index: 9999; }
 
-        .notification {
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background: #0F0F1E;
-            border-left: 10px solid var(--accent);
-            padding: 18px 30px;
-            border-radius: 16px;
-            color: white;
-            font-weight: 500;
-            box-shadow: var(--shadow-lg);
-            z-index: 9999;
+        @media (max-width: 1000px) {
+            .hero-grid, .form-grid, .footer-grid, .ref-levels { grid-template-columns: 1fr; }
+            .nav-links { position: fixed; top: 80px; left: -100%; width: 100%; height: 100vh; background: #0B0B1A; flex-direction: column; padding: 40px; transition: 0.4s; }
+            .nav-links.active { left: 0; }
+            .mobile-menu-btn { display: block; }
+            .hero h1 { font-size: 44px; }
         }
-
-        .animate {
-            transition: 0.6s;
-        }
+        @media (max-width: 550px) { .container { padding: 0 20px; } .section-header h2 { font-size: 36px; } .payment-card { padding: 30px 20px; } }
     </style>
 </head>
-
 <body>
-
     <!-- WhatsApp Float -->
-    <a href="https://wa.me/919985943961?text=Hi%20Skill%20Sphere%2C%20I'm%20interested%20in%20learning"
-        class="whatsapp-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <a href="https://wa.me/919985943961?text=Hi%20Skill%20Sphere%2C%20interested%20in%20plans" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
     <!-- HEADER -->
     <header id="header">
         <div class="container">
             <nav>
-                <div class="logo">
-                    <i class="fas fa-code-branch"></i>
-                    <span>Skill Sphere Code Hub</span>
-                </div>
+                <div class="logo"><i class="fas fa-code-branch"></i><span>Skill Sphere Code Hub</span></div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#books">Books</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#courses">Courses & Books</a></li>
                     <li><a href="#register">Register</a></li>
                     <li><a href="#referral">Referral</a></li>
                     <li><a href="#calculator">Earnings</a></li>
-                    <li><a href="https://earningsprogram777.github.io/mainlogin/loginpage" class="btn btn-primary"
-                            style="padding: 10px 24px;">LOGIN</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="https://earningsprogram777.github.io/mainlogin/loginpage" class="btn btn-primary" style="padding:10px 24px;">LOGIN</a></li>
                 </ul>
             </nav>
         </div>
@@ -798,330 +233,226 @@
     <section id="home" class="hero">
         <div class="container hero-grid">
             <div>
-                <h1 class="animate">Code. Learn. Earn. <br>3-Level Referral</h1>
-                <p class="hero-para"> Upgrade your skills with premium
-                    software courses & growth books. Unlock massive referral commissions.whatsapp status offer (100 rupees)after 20hrs send screenshot .</p>
+                <h1 class="animate">Learn skills • Earn daily • 3‑level referral</h1>
+                <p class="hero-para">courses (software, editing, marketing, stock market) & 100+ books (all genres). Get part‑time job assistance. WhatsApp status offer: ₹100 after 20hrs – send screenshot!</p>
                 <div style="display: flex; gap: 18px; flex-wrap: wrap;">
-                    <a href="#register" class="btn btn-primary"><i class="fas fa-rocket"></i>Start Learning</a>
-                    <a href="https://earningsprogram777.github.io/mainlogin/loginpage" class="btn btn-outline"><i
-                            class="fas fa-user"></i>LOGIN </a>
+                    <a href="#register" class="btn btn-primary"><i class="fas fa-rocket"></i> Start now</a>
+                    <a href="https://earningsprogram777.github.io/mainlogin/loginpage" class="btn btn-outline"><i class="fas fa-user"></i> Login</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat-item"><span class="stat-number">withdraw </span>
-                        <div style="color:#CFC2FF;">with in 30 minutes</div>
-                    </div>
-                    <div class="stat-item"><span class="stat-number">learn skill and earn money</span>
-                        <div style="color:#CFC2FF;">daily earnings (spot withdraw)</div>
-                    </div>
-                    <div class="stat-item"><span class="stat-number">whatsapp status offer for everyone (Earn ₹100)</span>
-                        <div style="color:#CFC2FF;">msg to us for details (tap whatsapp symbol) </div>
-                    </div>
+                    <div class="stat-item"><span class="stat-number">Withdraw in 30 min</span><div style="color:#CFC2FF;">instant for premium</div></div>
+                    <div class="stat-item"><span class="stat-number">WhatsApp status ₹100</span><div style="color:#CFC2FF;">msg 9985943961</div></div>
                 </div>
             </div>
-            <div class="hero-img">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format"
-                    alt="skill hub">
-            </div>
+            <div class="hero-img"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format" alt="skill hub"></div>
         </div>
     </section>
 
-    <!-- ===== COURSES SECTION ===== -->
-    <section id="courses">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-subtitle">SOFTWARE MASTERY</div>
-                <h2>Premium Courses <br> (₹999 → ₹499)</h2>
-                <p>HTML, CSS, JavaScript, Python – project based learning</p>
-            </div>
-            <div class="cards-grid">
-                <!-- HTML Course -->
-                <div class="product-card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?w=600"
-                            alt="html"></div>
-                    <div class="card-content">
-                        <div class="icon-badge"><i class="fab fa-html5"></i></div>
-                        <h3>HTML & CSS Pro</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹999</span><span class="discount-badge">-₹500</span>
-                            <div class="current-price">₹499</div>
-                        </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹170</span>
-                                <span class="level-item">L2: ₹80</span>
-                                <span class="level-item">L3: ₹50</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-HTML</div>
-                    </div>
-                </div>
-                <!-- JS Course -->
-                <div class="product-card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?w=600"
-                            alt="js"></div>
-                    <div class="card-content">
-                        <div class="icon-badge"><i class="fab fa-js"></i></div>
-                        <h3>JavaScript Mastery</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹999</span><span class="discount-badge">-₹500</span>
-                            <div class="current-price">₹499</div>
-                        </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹170</span>
-                                <span class="level-item">L2: ₹80</span>
-                                <span class="level-item">L3: ₹50</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-JS</div>
-                    </div>
-                </div>
-                <!-- Python Course -->
-                <div class="product-card">
-                    <div class="card-img"><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*3IcLSFuT8PQg4cUBaRXH1A.png"
-                            alt="python"></div>
-                    <div class="card-content">
-                        <div class="icon-badge"><i class="fab fa-python"></i></div>
-                        <h3>Python Programming</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹999</span><span class="discount-badge">-₹500</span>
-                            <div class="current-price">₹499</div>
-                        </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹170</span>
-                                <span class="level-item">L2: ₹80</span>
-                                <span class="level-item">L3: ₹50</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-PY</div>
-                    </div>
-                </div>
-            </div>
+    <!-- QUICK CATEGORIES (skill/book cloud) -->
+    <div class="container" style="margin-top: -40px; margin-bottom: 20px;">
+        <div class="skill-cloud">
+            <span class="skill-tag">Software</span><span class="skill-tag">Editing</span><span class="skill-tag">Marketing</span>
+            <span class="skill-tag">Stock market</span><span class="skill-tag">Fantasy</span><span class="skill-tag">Self‑Help</span>
+            <span class="skill-tag">Biography</span><span class="skill-tag">Coding notes</span><span class="skill-tag">50+ genres</span>
         </div>
-    </section>
+    </div>
 
-    <!-- ===== BOOKS & BUNDLES ===== -->
-    <section id="books" style="background: rgba(0,0,0,0.2);">
+    <!-- ===== PLANS SECTION (validity integrated) ===== -->
+    <section id="plans">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">PERSONAL GROWTH LIBRARY</div>
-                <h2>Premium Books & Bundles</h2>
-                <p>Single book, all books, all courses + books combo – with upgraded referral payouts</p>
+                <div class="section-subtitle">Choose your plan</div>
+                <h2>Validity & referral bonuses</h2>
+                <p>299 (4mo) • 499 (8mo) • 999 (16mo) • 1499 (lifetime) — upgrade anytime</p>
             </div>
             <div class="cards-grid">
-                <!-- Single Book: 499→299 -->
+                <!-- Plan 299 -->
                 <div class="product-card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=600"
-                            alt="book"></div>
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600" alt="basic plan"></div>
                     <div class="card-content">
-                        <div class="icon-badge"><i class="fas fa-book"></i></div>
-                        <h3>Single Premium Book</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹499</span><span class="discount-badge">-₹200</span>
-                            <div class="current-price">₹299</div>
+                        <div class="icon-badge"><i class="fas fa-leaf"></i></div>
+                        <h3>Starter (books+courses)</h3>
+                        <div class="price-block"><span class="old-price">₹499</span><span class="discount-badge">save 40%</span><div class="current-price">₹299</div></div>
+                        <div class="validity-badge"><i class="far fa-clock"></i> Valid 4 months</div>
+                        <div class="referral-earnings"><i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
+                            <div class="level-grid"><span class="level-item">L1: ₹100</span><span class="level-item">L2: ₹50</span><span class="level-item">L3: ₹30</span></div>
                         </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹200</span>
-                                <span class="level-item">L2: ₹50</span>
-                                <span class="level-item">L3: ₹30</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-BOOK</div>
+                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-299</div>
                     </div>
                 </div>
-                <!-- All Books / All courses (1499→999) -->
+                <!-- Plan 499 -->
                 <div class="product-card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600"
-                            alt="allbooks"></div>
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600" alt="silver plan"></div>
                     <div class="card-content">
-                        <div class="icon-badge"><i class="fas fa-layer-group"></i></div>
-                        <h3>All Books OR All Courses</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹1499</span><span class="discount-badge">-₹500</span>
-                            <div class="current-price">₹999</div>
+                        <div class="icon-badge"><i class="fas fa-fire"></i></div>
+                        <h3>Pro (courses + books)</h3>
+                        <div class="price-block"><span class="old-price">₹999</span><span class="discount-badge">-₹500</span><div class="current-price">₹499</div></div>
+                        <div class="validity-badge"><i class="far fa-clock"></i> Valid 8 months</div>
+                        <div class="referral-earnings"><i class="fas fa-gift"></i> <strong>Referral earnings</strong>
+                            <div class="level-grid"><span class="level-item">L1: ₹170</span><span class="level-item">L2: ₹80</span><span class="level-item">L3: ₹50</span></div>
                         </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹999</span>
-                                <span class="level-item">L2: ₹160</span>
-                                <span class="level-item">L3: ₹100</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-ALLBK / SSC-ALLCRS</div>
+                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-499</div>
                     </div>
                 </div>
-                <!-- ALL BOOKS + ALL COURSES (2999→1499) -->
+                <!-- Plan 999 -->
                 <div class="product-card">
-                    <div class="card-img"><img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600"
-                            alt="complete"></div>
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600" alt="gold plan"></div>
+                    <div class="card-content">
+                        <div class="icon-badge"><i class="fas fa-gem"></i></div>
+                        <h3>Elite (all access)</h3>
+                        <div class="price-block"><span class="old-price">₹1999</span><span class="discount-badge">-₹1000</span><div class="current-price">₹999</div></div>
+                        <div class="validity-badge"><i class="far fa-clock"></i> Valid 16 months</div>
+                        <div class="referral-earnings"><i class="fas fa-gift"></i> <strong>Referral earnings</strong>
+                            <div class="level-grid"><span class="level-item">L1: ₹330</span><span class="level-item">L2: ₹160</span><span class="level-item">L3: ₹100</span></div>
+                        </div>
+                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-999</div>
+                    </div>
+                </div>
+                <!-- Plan 1499 -->
+                <div class="product-card">
+                    <div class="card-img"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600" alt="lifetime"></div>
                     <div class="card-content">
                         <div class="icon-badge"><i class="fas fa-crown"></i></div>
-                        <h3>Complete Mastery Combo</h3>
-                        <div class="price-block">
-                            <span class="old-price">₹2999</span><span class="discount-badge">-₹1500</span>
-                            <div class="current-price">₹1499</div>
+                        <h3>Lifetime Legend</h3>
+                        <div class="price-block"><span class="old-price">₹2999</span><span class="discount-badge">-₹1500</span><div class="current-price">₹1499</div></div>
+                        <div class="validity-badge"><i class="fas fa-infinity"></i> Lifetime validity</div>
+                        <div class="referral-earnings"><i class="fas fa-gift"></i> <strong>Referral earnings</strong>
+                            <div class="level-grid"><span class="level-item">L1: ₹500</span><span class="level-item">L2: ₹240</span><span class="level-item">L3: ₹150</span></div>
                         </div>
-                        <div class="referral-earnings">
-                            <i class="fas fa-gift" style="color: #FF6B4A;"></i> <strong>Referral earnings</strong>
-                            <div class="level-grid">
-                                <span class="level-item">L1: ₹500</span>
-                                <span class="level-item">L2: ₹250</span>
-                                <span class="level-item">L3: ₹150</span>
-                            </div>
-                        </div>
-                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-COMBO</div>
+                        <div class="product-code"><i class="fas fa-hashtag"></i> SSC-LIFE</div>
                     </div>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top: 30px; color:#b2b2d0;">✨ Plan upgrade available anytime — you just pay the difference</p>
+        </div>
+    </section>
+
+    <!-- ===== COURSES & BOOKS DEEP ===== -->
+    <section id="courses" style="background: rgba(0,0,0,0.2);">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">what you get</div>
+                <h2>Courses • Books • Tools • Notes</h2>
+                <p>Software, editing, marketing, stock market + 50+ book genres + handwritten notes + premium tools</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(2,1fr); gap: 25px;">
+                <div class="glass-deep" style="padding: 35px;">
+                    <i class="fas fa-laptop-code" style="font-size: 48px; color: var(--accent);"></i>
+                    <h3 style="margin: 20px 0 10px;">📘 Courses </h3>
+                    <p style="color:#ccc;">Python, JavaScript, HTML/CSS, Editing (Premiere, After Effects), Digital Marketing, Stock Market trading, Soft Skills & more. New skills added every week.</p>
+                </div>
+                <div class="glass-deep" style="padding: 35px;">
+                    <i class="fas fa-book-open" style="font-size: 48px; color: var(--accent);"></i>
+                    <h3 style="margin: 20px 0 10px;">📚 Books </h3>
+                    <p style="color:#ccc;">Fantasy, Sci-Fi, Self-help, Biography, Competitive exam, Programming notes, Engineering, Medical, Religion, Poetry, Cookbooks — unlimited reading.</p>
+                </div>
+                <div class="glass-deep" style="padding: 35px;">
+                    <i class="fas fa-tools" style="font-size: 48px; color: var(--accent);"></i>
+                    <h3 style="margin: 20px 0 10px;">🛠️ Premium tools</h3>
+                    <p style="color:#ccc;">Software activation, design resources, stock market scanners, editing plugins – included in higher plans.</p>
+                </div>
+                <div class="glass-deep" style="padding: 35px;">
+                    <i class="fas fa-briefcase" style="font-size: 48px; color: var(--accent);"></i>
+                    <h3 style="margin: 20px 0 10px;">💼 Part‑time jobs</h3>
+                    <p style="color:#ccc;">Get job assistance (content writing, data entry,telicalling, teaching, freelancing) for interested members.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== PAYMENT (UPI QR) ===== -->
+    <!-- ===== PAYMENT SECTION ===== -->
     <section id="pricing" class="payment">
         <div class="container">
             <div class="section-header">
                 <div class="section-subtitle">SECURE PAYMENT</div>
-                <h2>Pay & Start Instantly</h2>
-                <p>Scan QR or use UPI ID. Add transaction ID in registration form.</p>
+                <h2>Pay & start instantly</h2>
+                <p>Scan QR or use UPI ID. Add transaction ID in registration.</p>
             </div>
             <div class="payment-card">
-                <i class="fas fa-qrcode" style="font-size: 58px; color: var(--accent); margin-bottom: 10px;"></i>
-                <div class="qr-box">
-                    <img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true"
-                        alt="UPI QR">
-                </div>
-                <div class="upi-block" id="upiDisplay">
-                    9985943961@mbk
-                </div>
+                <i class="fas fa-qrcode" style="font-size: 58px; color: var(--accent);"></i>
+                <div class="qr-box"><img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true" alt="UPI QR"></div>
+                <div class="upi-block" id="upiDisplay">9985943961@mbk</div>
                 <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin: 20px 0;">
                     <button class="btn btn-accent" onclick="copyUpiId()"><i class="fas fa-copy"></i> Copy UPI</button>
-                    <button class="btn btn-outline" onclick="copyPaymentMessage()"><i class="fab fa-whatsapp"></i>
-                        Payment Msg</button>
+                    <button class="btn btn-outline" onclick="copyPaymentMessage()"><i class="fab fa-whatsapp"></i> Payment Msg</button>
                 </div>
-                <p style="color: #B2B2D0;"><i class="fas fa-shield-alt"></i> After payment, register below. Credentials
-                    within 24h.</p>
+                <p style="color: #B2B2D0;"><i class="fas fa-shield-alt"></i> After payment, register below. Activation within 1 hour.</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== REGISTRATION ===== -->
+    <!-- ===== REGISTRATION (referral code gen) ===== -->
     <section id="register">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">register for whatsapp status joining(earn ₹100)  </div>
-                <h2>Register & Get Your Referral Code </h2>
+                <div class="section-subtitle">Join & get ₹100 status bonus</div>
+                <h2>Register & Get your referral code</h2>
             </div>
-            <div class="registration-form" id="registrationForm">
+            <div class="registration-form">
                 <form id="registerForm">
                     <div class="form-grid">
-                        <div class="form-group"><label>Full name *</label><input type="text" id="fullName"
-                                class="form-control" required placeholder="Your name"></div>
-                        <div class="form-group"><label>Age *</label><input type="number" id="age" class="form-control"
-                                required min="18" max="60"></div>
-                        <div class="form-group"><label>WhatsApp *</label><input type="tel" id="whatsapp"
-                                class="form-control" required maxlength="10" pattern="[0-9]{10}" placeholder="10-digit">
+                        <div class="form-group"><label>Full name *</label><input type="text" id="fullName" class="form-control" required></div>
+                        <div class="form-group"><label>Age *</label><input type="number" id="age" class="form-control" required min="18"></div>
+                        <div class="form-group"><label>WhatsApp *</label><input type="tel" id="whatsapp" class="form-control" required maxlength="10" placeholder="10-digit"></div>
+                        <div class="form-group"><label>Email</label><input type="email" id="email" class="form-control"></div>
+                        <div class="form-group"><label>Password *</label><input type="password" id="password" class="form-control" minlength="6">
+                            <span class="password-toggle" onclick="togglePassword('password')" style="position:absolute; right:30px; margin-top:-38px; cursor:pointer;"><i class="fas fa-eye"></i></span>
                         </div>
-                        <div class="form-group"><label>Email</label><input type="email" id="email" class="form-control"
-                                placeholder="optional"></div>
-                        <div class="form-group"><label>Password *</label><input type="password" id="password"
-                                class="form-control" minlength="6">
-                            <span class="password-toggle" onclick="togglePassword('password')"
-                                style="position: absolute; right: 30px; margin-top: -38px; cursor: pointer;"><i
-                                    class="fas fa-eye"></i></span>
+                        <div class="form-group"><label>Confirm Password *</label><input type="password" id="confirmPassword" class="form-control">
+                            <span onclick="togglePassword('confirmPassword')" style="position:absolute; right:30px; margin-top:-38px; cursor:pointer;"><i class="fas fa-eye"></i></span>
                         </div>
-                        <div class="form-group"><label>Confirm Password *</label><input type="password"
-                                id="confirmPassword" class="form-control">
-                            <span class="password-toggle" onclick="togglePassword('confirmPassword')"
-                                style="position: absolute; right: 30px; margin-top: -38px; cursor: pointer;"><i
-                                    class="fas fa-eye"></i></span>
-                        </div>
-                        <div class="form-group"><label>City & State</label><input type="text" id="location"
-                                class="form-control" required></div>
+                        <div class="form-group"><label>City & State</label><input type="text" id="location" class="form-control" required placeholder="e.g. Mumbai, Maharashtra"></div>
                         <div class="form-group"><label>Education</label>
                             <select id="qualification" class="form-control">
-                                <option>Student</option>
-                                <option>Graduate</option>
-                                <option>Professional</option>
+                                <option value="Student">Student</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Professional">Professional</option>
+                                <option value="Other">Other</option>
                             </select>
                         </div>
-                        <div class="form-group"><label>Select product *</label>
+                        <div class="form-group"><label>Select plan *</label>
                             <select id="courseSelection" class="form-control" required>
-                                <option value="book">📘 Single Book (₹299) – L1:100 L2:50 L3:30</option>
-                                <option value="course">💻 Single Course (₹499) – L1:170 L2:80 L3:50</option>
-                                <option value="allbooks_courses">📚 All Books OR All Courses (₹999) – L1:330 L2:160
-                                    L3:100</option>
-                                <option value="combo">🏆 Complete Combo (All Books+All Courses) ₹1499 – L1:500 L2:250
-                                    L3:150</option>
+                                <option value="book">₹299 (4 months) – L1:₹100 L2:₹50 L3:₹30</option>
+                                <option value="course">₹499 (8 months) – L1:₹170 L2:₹80 L3:₹50</option>
+                                <option value="allbooks_courses">₹999 (16 months) – L1:₹330 L2:₹160 L3:₹100</option>
+                                <option value="combo">₹1499 (Lifetime) – L1:₹500 L2:₹240 L3:₹150</option>
                             </select>
                         </div>
-                        <div class="form-group"><label>Referral code (if any)</label><input type="text" id="reference"
-                                class="form-control" placeholder="MCxxxx"></div>
+                        <div class="form-group"><label>Referral code (if any)</label><input type="text" id="reference" class="form-control" placeholder="e.g. DEMO12345"></div>
                     </div>
-                    <div class="form-group"><label>Payment details / Transaction ID *</label><textarea
-                            id="paymentDetails" class="form-control" rows="2"
-                            placeholder="UPI transaction ref, amount, date"></textarea></div>
-                    <div class="form-group"><label>Your learning goals</label><textarea id="message"
-                            class="form-control" rows="2" placeholder="I want to..."></textarea></div>
-
-                    <!-- dynamic referral display -->
+                    <div class="form-group"><label>Transaction ID / Payment details *</label><textarea id="paymentDetails" class="form-control" rows="2" placeholder="Enter transaction ID or payment screenshot name"></textarea></div>
+                    <div class="form-group"><label>Your goals (optional)</label><textarea id="message" class="form-control" rows="2" placeholder="What do you want to learn?"></textarea></div>
+                    <!-- referral code box (dynamic) -->
                     <div id="referralBox" class="referral-glow-card" style="display: none;">
                         <i class="fas fa-trophy" style="font-size: 44px; color: #FFD966;"></i>
-                        <h3 style="color:white;">Your Unique Referral Code</h3>
+                        <h3 style="color:white;">Your unique referral code</h3>
                         <div id="referralCodeDisplay" class="ref-code-big">MCSPHERE123</div>
                         <p style="color:#C0C0E0;">Share this code – earn L1/L2/L3 commissions</p>
                         <div style="display: flex; gap: 18px; justify-content: center; margin-top: 20px;">
-                            <button type="button" class="btn btn-accent" onclick="copyReferral()"><i
-                                    class="fas fa-copy"></i> Copy</button>
-                            <button type="button" class="btn btn-outline" onclick="openShareModal()"><i
-                                    class="fas fa-share-alt"></i> Share</button>
+                            <button type="button" class="btn btn-accent" onclick="copyReferral()"><i class="fas fa-copy"></i> Copy</button>
+                            <button type="button" class="btn btn-outline" onclick="openShareModal()"><i class="fas fa-share-alt"></i> Share</button>
                         </div>
                     </div>
                     <div style="text-align: center; margin-top: 40px;">
-                        <button type="submit" class="btn btn-primary" style="padding: 18px 56px;" id="submitBtn"><span
-                                id="btnText">Submit & Continue</span></button>
+                        <button type="submit" class="btn btn-primary" style="padding: 18px 56px;">Submit & Continue</button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-
-    <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-7178917402710765">
-</amp-auto-ads>
-
-    <!-- ===== REFERRAL SYSTEM (3 LEVELS) ===== -->
+    <!-- ===== REFERRAL LEVELS ===== -->
     <section id="referral">
         <div class="container">
             <div class="section-header">
-                <div class="section-subtitle">UNLOCK HIGHER COMMISSIONS</div>
-                <h2>3-Level Referral Rewards (₹100 bonus for new user)</h2>
-                <p>Clear earnings – per product, per level. Upgrade packs & earn more.</p>
+                <div class="section-subtitle">UNLOCK COMMISSIONS</div>
+                <h2>3‑Level referral rewards</h2>
+                <p>L1 / L2 / L3 according to plan. Plus ₹100 WhatsApp status bonus for new users.</p>
             </div>
             <div class="ref-levels">
-                <div class="level-card"><span class="level-num">L1</span>
-                    <div style="font-size: 20px; margin: 10px 0;">Direct</div><span class="earning-highlight">₹200 –
-                        ₹500</span>
-                    <p style="color: #B2B2D0; margin-top: 15px;">Depends on pack: Book (200), Course (300), All pack
-                        (330), Combo (999)</p>
-                </div>
-                <div class="level-card"><span class="level-num">L2</span>
-                    <div style="font-size: 20px; margin: 10px 0;">Team</div><span class="earning-highlight">₹50 –
-                        ₹250</span>
-                    <p style="color: #B2B2D0; margin-top: 15px;">Book 50, Course 80, All pack 160, Combo 250</p>
-                </div>
-                <div class="level-card"><span class="level-num">L3</span>
-                    <div style="font-size: 20px; margin: 10px 0;">Network</div><span class="earning-highlight">₹30 –
-                        ₹150</span>
-                    <p style="color: #B2B2D0; margin-top: 15px;">Book 30, Course 50, All pack 100, Combo 150</p>
-                </div>
+                <div class="level-card"><span class="level-num">L1</span><div style="font-size:20px;">Direct</div><span class="earning-highlight">₹100 – ₹500</span><p style="color:#B2B2D0;">plan wise: 100,170,330,500</p></div>
+                <div class="level-card"><span class="level-num">L2</span><div style="font-size:20px;">Team</div><span class="earning-highlight">₹50 – ₹240</span><p style="color:#B2B2D0;">50,80,160,240</p></div>
+                <div class="level-card"><span class="level-num">L3</span><div style="font-size:20px;">Network</div><span class="earning-highlight">₹30 – ₹150</span><p style="color:#B2B2D0;">30,50,100,150</p></div>
             </div>
         </div>
     </section>
@@ -1136,33 +467,46 @@
             <div class="calculator-panel">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
                     <div>
-                        <label>Level 1 (direct)</label>
-                        <input type="range" id="l1range" min="0" max="30" value="5" class="slider" style="width:100%">
-                        <span id="l1val" style="color:var(--accent); font-weight: 700;">5</span>
-                        <br><br>
-                        <label>Level 2</label>
-                        <input type="range" id="l2range" min="0" max="60" value="8" style="width:100%">
-                        <span id="l2val" style="color:var(--accent);">8</span>
-                        <br><br>
-                        <label>Level 3</label>
-                        <input type="range" id="l3range" min="0" max="120" value="10" style="width:100%">
-                        <span id="l3val" style="color:var(--accent);">10</span>
-                        <br><br>
-                        <label>Product type</label>
+                        <label>Level 1 (direct) <span id="l1val">5</span></label>
+                        <input type="range" id="l1range" min="0" max="30" value="5" style="width:100%"><br>
+                        <label>Level 2 <span id="l2val">8</span></label>
+                        <input type="range" id="l2range" min="0" max="60" value="8" style="width:100%"><br>
+                        <label>Level 3 <span id="l3val">10</span></label>
+                        <input type="range" id="l3range" min="0" max="120" value="10" style="width:100%"><br>
+                        <label>Plan type</label>
                         <select id="calcProductSelect" class="form-control">
-                            <option value="book">Book (299) – L1:100 L2:50 L3:30</option>
-                            <option value="course" selected>Course (499) – L1:170 L2:80 L3:50</option>
-                            <option value="all">All Books/All Courses (999) – L1:330 L2:160 L3:100</option>
-                            <option value="combo">Complete Combo (1499) – L1:500 L2:250 L3:150</option>
+                            <option value="book">₹299 (L1:100 L2:50 L3:30)</option>
+                            <option value="course" selected>₹499 (L1:170 L2:80 L3:50)</option>
+                            <option value="all">₹999 (L1:330 L2:160 L3:100)</option>
+                            <option value="combo">₹1499 (L1:500 L2:240 L3:150)</option>
                         </select>
                     </div>
-                    <div style="background: rgba(0,0,0,0.3); border-radius: 36px; padding: 30px; text-align: center;">
-                        <h3 style="color:#ddd;">Estimated Monthly</h3>
+                    <div style="background:rgba(0,0,0,0.3); border-radius:36px; padding:30px; text-align:center;">
+                        <h3 style="color:#ddd;">Estimated monthly</h3>
                         <div class="calc-result" id="calcTotal">₹0</div>
-                        <div id="breakdown" style="color: #b5b5d5; font-size: 16px;">L1: ₹0 | L2: ₹0 | L3: ₹0</div>
+                        <div id="breakdown" style="color:#b5b5d5;">L1:₹0 L2:₹0 L3:₹0</div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT / SHARE BUTTON ===== -->
+    <section id="about" style="background: #0f0f1c;">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-subtitle">CONNECT WITH US</div>
+                <h2>Skill Sphere Code Hub</h2>
+                <p>CEO Anil Mahankali • 50+ book genres • 500+ courses • part‑time jobs</p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin: 40px 0;">
+                <a href="https://drive.google.com/file/d/166Tf0FczDsmZ3--Iddx1YMjmRnHYNr_7/view?usp=sharing" target="_blank" class="btn btn-outline"><i class="fas fa-download"></i> Android App</a>
+                <a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Channel</a>
+                <a href="https://chat.whatsapp.com/E94BX4hBsFM4GpvQx5FBEW" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp Group</a>
+                <a href="https://wa.me/919985943961?text=I%20want%20₹100%20whatsapp%20status%20offer%20details" class="btn btn-accent"><i class="fas fa-star"></i> ₹100 Status offer</a>
+                <button onclick="shareAll()" class="btn btn-primary"><i class="fas fa-share-alt"></i> Share about us</button>
+            </div>
+            <p style="text-align:center; color:#b2b2d0;">📢 Multiconnect.shop & all socials: @skillsphere_codehub</p>
         </div>
     </section>
 
@@ -1171,62 +515,43 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="logo" style="margin-bottom: 20px;"><i class="fas fa-code-branch"></i> Skill Sphere</div>
-                    <p style="color:#a5a5c5;">Learn, earn and level up. India's fastest growing skill hub.</p>
+                    <div class="logo" style="margin-bottom:20px;"><i class="fas fa-code-branch"></i> Skill Sphere</div>
+                    <p style="color:#a5a5c5;">Learn, earn & grow. India's fastest growing skill hub.</p>
                 </div>
-                <div>
-                    <h4>Resources</h4>
-                    <ul style="list-style: none;">
-                        <li><a href="#courses" style="color:#B2B2D0;">Courses</a></li>
-                        <li><a href="#books" style="color:#B2B2D0;">Books</a></li>
-                        <li><a href="#pricing" style="color:#B2B2D0;">Pricing</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Support</h4>
-                    <ul style="list-style: none;">
-                        <li>+91 9985943961</li>
-                        <li>skillspherecodehub@gmail.com</li>
-                        <li>Hyderabad</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Follow</h4><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a><a href="#"
-                        class="social-icon"><i class="fab fa-whatsapp"></i></a>
-                </div>
+                <div><h4>Resources</h4><ul style="list-style:none;"><li><a href="#plans">Plans</a></li><li><a href="#courses">Courses</a></li><li><a href="#register">Register</a></li></ul></div>
+                <div><h4>Support</h4><ul style="list-style:none;"><li>+91 9985943961</li><li>skillspherecodehub@gmail.com</li><li>Hyderabad</li></ul></div>
+                <div><h4>Follow</h4><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a><a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a></div>
             </div>
             <hr style="border-color: rgba(255,255,255,0.05); margin: 50px 0 30px;">
-            <p style="text-align: center; color: #8484a5;">© 2025 Skill Sphere Code Hub |@CEO ANIL MAHANKALI | whatsapp status earnings only ₹20 is possible to withdraw for normal users ,premium users withdraw all earnings | All
-                rights reserved |we are not responsible for anything here,for withdraw and other enquries we can give support.</p>
+            <p style="text-align: center; color: #8484a5;">© 2025 Skill Sphere Code Hub | CEO Anil Mahankali | WhatsApp status earnings: ₹20 minimum withdrawal for normal, premium full withdrawal | upgrade anytime | we support 24/7</p>
         </div>
     </footer>
 
-    <!-- SHARE MODAL (simple inline) -->
-    <div id="referModal"
-        style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(5,5,15,0.95); backdrop-filter:blur(12px); z-index:99999; display:none; align-items:center; justify-content:center;">
+    <!-- SHARE MODAL -->
+    <div id="referModal" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(5,5,15,0.95); backdrop-filter:blur(12px); z-index:99999; display:none; align-items:center; justify-content:center;">
         <div style="background:#12122A; max-width:450px; padding:40px; border-radius:50px; text-align:center;">
             <h3 style="color:white;">🚀 Share & Earn</h3>
-            <div style="font-size: 38px; font-weight: 900; background: #000; padding: 15px; border-radius: 20px; color: #FF6B4A; margin:25px 0; letter-spacing: 5px;"
-                id="modalReferralCode">MCSPHERE</div>
+            <div style="font-size: 38px; font-weight: 900; background: #000; padding: 15px; border-radius: 20px; color: #FF6B4A; margin:25px 0; letter-spacing: 5px;" id="modalReferralCode">MCSPHERE</div>
             <div style="display:flex; gap:15px; justify-content:center;">
                 <button class="btn btn-accent" onclick="shareWhatsApp()"><i class="fab fa-whatsapp"></i> Share</button>
                 <button class="btn btn-outline" onclick="copyModalCode()"><i class="fas fa-copy"></i> Copy</button>
             </div>
-            <button onclick="closeModal()" style="margin-top:30px; background:transparent; border:none; color:white;"><i
-                    class="fas fa-times"></i> close</button>
+            <button onclick="closeModal()" style="margin-top:30px; background:transparent; border:none; color:white;"><i class="fas fa-times"></i> close</button>
         </div>
     </div>
 
     <script>
-        // ---------- UPDATED PRICING & REFERRAL STRUCTURE ----------
-        const REFERRAL_MAP = {
-            book: { l1: 100, l2: 50, l3: 30 },
-            course: { l1: 170, l2: 80, l3: 50 },
-            all: { l1: 330, l2: 160, l3: 100 },
-            combo: { l1: 500, l2: 250, l3: 150 }
+        // updated referral map with L2:240 for combo
+        const REFERRAL_MAP = { book: { l1: 100, l2: 50, l3: 30 }, course: { l1: 170, l2: 80, l3: 50 }, all: { l1: 330, l2: 160, l3: 100 }, combo: { l1: 500, l2: 240, l3: 150 } };
+        
+        // Plan display names mapping
+        const PLAN_NAMES = {
+            'book': '₹299 (4 months)',
+            'course': '₹499 (8 months)',
+            'allbooks_courses': '₹999 (16 months)',
+            'combo': '₹1499 (Lifetime)'
         };
 
-        // ---------- DYNAMIC REFERRAL CODE GENERATION ----------
         const fullNameInput = document.getElementById('fullName');
         const whatsappInput = document.getElementById('whatsapp');
         const referralBox = document.getElementById('referralBox');
@@ -1235,63 +560,98 @@
 
         function generateReferralCode() {
             let name = fullNameInput.value.trim().toUpperCase().replace(/[^A-Z]/g, '').slice(0, 5) || 'USER';
-            let phone = whatsappInput.value.trim().slice(-5) ;
-            
-            return `${name}${phone}`;
+            let phone = whatsappInput.value.trim().slice(-5);
+            return name + phone;
         }
-
         function updateReferralUI() {
             if (fullNameInput.value.length > 2 && whatsappInput.value.length === 10) {
                 let code = generateReferralCode();
                 referralCodeSpan.innerText = code;
                 modalReferralCode.innerText = code;
                 referralBox.style.display = 'block';
-            } else {
-                referralBox.style.display = 'none';
-            }
+            } else { referralBox.style.display = 'none'; }
         }
         fullNameInput.addEventListener('input', updateReferralUI);
         whatsappInput.addEventListener('input', updateReferralUI);
 
-        // ---------- FORM SUBMIT ----------
         document.getElementById('registerForm').addEventListener('submit', function (e) {
             e.preventDefault();
-            if (!fullNameInput.value || !whatsappInput.value || whatsappInput.value.length !== 10) {
-                alert('Enter valid name & 10 digit WhatsApp');
-                return;
-            }
-            let pwd = document.getElementById('password').value;
-            let cpwd = document.getElementById('confirmPassword').value;
-            if (pwd !== cpwd) { alert('Passwords do not match'); return; }
+            
+            // Get all form values
+            const fullName = document.getElementById('fullName').value.trim();
+            const age = document.getElementById('age').value;
+            const whatsapp = document.getElementById('whatsapp').value.trim();
+            const email = document.getElementById('email').value.trim() || 'Not provided';
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const location = document.getElementById('location').value.trim() || 'Not provided';
+            const qualification = document.getElementById('qualification').value;
+            const plan = document.getElementById('courseSelection').value;
+            const planDisplay = PLAN_NAMES[plan] || plan;
+            const referredBy = document.getElementById('reference').value.trim() || 'None';
+            const paymentDetails = document.getElementById('paymentDetails').value.trim();
+            const goals = document.getElementById('message').value.trim() || 'Not specified';
+            const referralCode = referralCodeSpan.innerText || 'SSGENERATED';
 
-            const product = document.getElementById('courseSelection').value;
-            let productName = '';
-            if (product === 'book') productName = 'Single Book ₹299';
-            else if (product === 'course') productName = 'Single Course ₹499';
-            else if (product === 'allbooks_courses') productName = 'All Books or All Courses ₹999';
-            else productName = 'Complete Combo ₹1499';
+            // Validation
+            if (!fullName) { alert('Please enter your full name'); return; }
+            if (!age || age < 18) { alert('Please enter a valid age (18 or above)'); return; }
+            if (!whatsapp || whatsapp.length !== 10) { alert('Please enter a valid 10-digit WhatsApp number'); return; }
+            if (!password || password.length < 6) { alert('Password must be at least 6 characters'); return; }
+            if (password !== confirmPassword) { alert('Passwords do not match'); return; }
+            if (!paymentDetails) { alert('Please enter transaction ID / payment details'); return; }
 
-            let refCode = referralCodeSpan.innerText || 'SSGENERATED';
-            let message = `*Skill Sphere Registration*%0A%0A👤 Name: ${fullNameInput.value}%0A📱 WhatsApp: ${whatsappInput.value}%0A📦 Product: ${productName}%0A💸 Payment: ${document.getElementById('paymentDetails').value}%0A🆔 My Referral Code: ${refCode}%0A🔗 Referred by: ${document.getElementById('reference').value || 'none'}%0A%0A✅ Please activate my account.`;
+            // Create a beautifully formatted WhatsApp message
+            const message = `*🎓 NEW REGISTRATION - SKILL SPHERE CODE HUB*%0A%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*👤 PERSONAL DETAILS*%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*Name:* ${fullName}%0A` +
+                `*Age:* ${age}%0A` +
+                `*WhatsApp:* +91 ${whatsapp}%0A` +
+                `*Email:* ${email}%0A` +
+                `*Location:* ${location}%0A` +
+                `*Education:* ${qualification}%0A%0A` +
+                
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*📦 PLAN & PAYMENT*%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*Selected Plan:* ${planDisplay}%0A` +
+                `*Transaction ID:* ${paymentDetails}%0A%0A` +
+                
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*🔗 REFERRAL INFORMATION*%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*Your Referral Code:* ${referralCode}%0A` +
+                `*Referred By:* ${referredBy}%0A%0A` +
+                
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*🎯 GOALS*%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*Goals/Message:* ${goals}%0A%0A` +
+                
+                `━━━━━━━━━━━━━━━━━━━━━%0A` +
+                `*⏱️ Submitted:* ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}%0A` +
+                `━━━━━━━━━━━━━━━━━━━━━%0A%0A` +
+                
+                `_Thank you for joining Skill Sphere Code Hub! We'll activate your account within 1 hour._ 🙏`;
+
+            // Open WhatsApp with the formatted message
             window.open(`https://wa.me/919985943961?text=${message}`, '_blank');
-
-            // show share modal
+            
+            // Open share modal
             openShareModal();
         });
 
-        // ---------- CALCULATOR LOGIC (based on new earnings) ----------
+        // calculator
         function calcEarnings() {
-            let l1 = parseInt(document.getElementById('l1range').value) || 0;
-            let l2 = parseInt(document.getElementById('l2range').value) || 0;
-            let l3 = parseInt(document.getElementById('l3range').value) || 0;
+            let l1 = +document.getElementById('l1range').value, l2 = +document.getElementById('l2range').value, l3 = +document.getElementById('l3range').value;
             let prod = document.getElementById('calcProductSelect').value;
             let ref = REFERRAL_MAP[prod] || REFERRAL_MAP.course;
-            let total = (l1 * ref.l1) + (l2 * ref.l2) + (l3 * ref.l3);
+            let total = l1 * ref.l1 + l2 * ref.l2 + l3 * ref.l3;
             document.getElementById('calcTotal').innerText = '₹' + total.toLocaleString('en-IN');
             document.getElementById('breakdown').innerHTML = `L1: ₹${l1 * ref.l1} | L2: ₹${l2 * ref.l2} | L3: ₹${l3 * ref.l3}`;
-            document.getElementById('l1val').innerText = l1;
-            document.getElementById('l2val').innerText = l2;
-            document.getElementById('l3val').innerText = l3;
+            document.getElementById('l1val').innerText = l1; document.getElementById('l2val').innerText = l2; document.getElementById('l3val').innerText = l3;
         }
         document.getElementById('l1range').addEventListener('input', calcEarnings);
         document.getElementById('l2range').addEventListener('input', calcEarnings);
@@ -1299,45 +659,37 @@
         document.getElementById('calcProductSelect').addEventListener('change', calcEarnings);
         window.onload = function () { calcEarnings(); updateReferralUI(); };
 
-        // ---------- UTILITIES ----------
-        function togglePassword(id) {
-            let inp = document.getElementById(id);
-            inp.type = (inp.type === 'password') ? 'text' : 'password';
+        // helpers
+        function togglePassword(id) { let inp = document.getElementById(id); inp.type = (inp.type === 'password') ? 'text' : 'password'; }
+        function copyUpiId() { navigator.clipboard.writeText('9985943961@mbk'); showNotif('UPI copied'); }
+        function copyPaymentMessage() { 
+            let msg = `Skill Sphere Payment\nUPI: 9985943961@mbk\nPlans: ₹299/4mo, ₹499/8mo, ₹999/16mo, ₹1499 lifetime`; 
+            navigator.clipboard.writeText(msg); 
+            showNotif('Payment msg copied'); 
         }
-        function copyUpiId() {
-            navigator.clipboard.writeText('9985943961@mbk');
-            showNotif('UPI ID copied');
-        }
-        function copyPaymentMessage() {
-            let msg = `Skill Sphere Code Hub Payment%0AUPI: 9985943961@mbk%0AOptions: Book ₹299, Course ₹499, All bundle ₹999, Combo ₹1499`;
-            navigator.clipboard.writeText(msg.replace(/%0A/g, '\n'));
-            showNotif('Payment message copied');
-        }
-        function copyReferral() {
-            navigator.clipboard.writeText(referralCodeSpan.innerText);
-            showNotif('Referral code copied');
-        }
+        function copyReferral() { navigator.clipboard.writeText(referralCodeSpan.innerText); showNotif('Referral code copied'); }
         function openShareModal() { document.getElementById('referModal').style.display = 'flex'; }
         function closeModal() { document.getElementById('referModal').style.display = 'none'; }
-        function shareWhatsApp() {
-            let code = modalReferralCode.innerText;
-            let url = `https://wa.me/?text=${encodeURIComponent('Join Skill Sphere Code Hub with my referral code: ' + code + ' and get premium skills. Register now: ' + window.location.href)}`;
-            window.open(url, '_blank');
+        function shareWhatsApp() { 
+            let code = modalReferralCode.innerText; 
+            window.open(`https://wa.me/?text=${encodeURIComponent('Join Skill Sphere Code Hub with my referral code: ' + code + '\n\n' + window.location.href)}`,'_blank'); 
         }
-        function copyModalCode() {
-            navigator.clipboard.writeText(modalReferralCode.innerText);
-            showNotif('Copied!');
-            closeModal();
+        function copyModalCode() { navigator.clipboard.writeText(modalReferralCode.innerText); showNotif('Copied!'); closeModal(); }
+        function showNotif(m) { 
+            let n = document.createElement('div'); 
+            n.className='notification'; 
+            n.innerText=m; 
+            document.body.appendChild(n); 
+            setTimeout(()=>n.remove(),2500); 
         }
-        function showNotif(msg) {
-            let n = document.createElement('div'); n.className = 'notification'; n.innerText = msg;
-            document.body.appendChild(n); setTimeout(() => { n.remove(); }, 2500);
+        function shareAll() { 
+            let shareText = `🚀 Skill Sphere Code Hub\n• 500+ courses, 5000+ books\n• Plans: 299/4mo, 499/8mo, 999/16mo, 1499/lifetime\n• Referral L1/L2/L3 earnings\n• App: https://drive.google.com/file/d/166Tf0FczDsmZ3--Iddx1YMjmRnHYNr_7/view\nWhatsApp channel: https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s\nGroup: https://chat.whatsapp.com/E94BX4hBsFM4GpvQx5FBEW`; 
+            navigator.clipboard.writeText(shareText); 
+            showNotif('Info copied, paste anywhere'); 
         }
+        
         // mobile menu
-        const mobileBtn = document.getElementById('mobileMenuBtn');
-        const nav = document.getElementById('navLinks');
-        mobileBtn?.addEventListener('click', () => { nav.classList.toggle('active'); });
+        document.getElementById('mobileMenuBtn')?.addEventListener('click', ()=>document.getElementById('navLinks').classList.toggle('active'));
     </script>
 </body>
-
 </html>
