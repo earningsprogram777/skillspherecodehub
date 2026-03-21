@@ -29,6 +29,7 @@
             --shadow-md: 0 8px 24px rgba(0,0,0,0.25);
             --radius-card: 20px;
             --success: #00D26A;
+            --red-bright: #FF3B3B;
         }
         body {
             font-family: 'Inter', sans-serif;
@@ -97,6 +98,23 @@
             background: var(--success);
             color: white;
         }
+        .btn-red-large {
+            background: linear-gradient(135deg, #FF3B3B 0%, #CC0000 100%);
+            color: white;
+            font-size: 18px;
+            padding: 16px 28px;
+            font-weight: 800;
+            box-shadow: 0 8px 20px rgba(255,59,59,0.4);
+            width: 100%;
+            justify-content: center;
+        }
+        .btn-red-large i {
+            font-size: 22px;
+        }
+        .btn-red-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(255,59,59,0.5);
+        }
         header {
             position: fixed;
             top: 0;
@@ -159,7 +177,7 @@
         }
         .courses-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
         .course-card {
@@ -334,7 +352,7 @@
         }
         .modal-content {
             background: var(--dark-light);
-            max-width: 550px;
+            max-width: 600px;
             width: 100%;
             border-radius: 32px;
             padding: 28px;
@@ -370,14 +388,37 @@
             margin-left: 8px;
         }
         .qr-code-img {
-            max-width: 160px;
-            border-radius: 20px;
+            max-width: 220px;
+            width: 100%;
+            border-radius: 24px;
             margin: 10px auto;
             display: block;
-            border: 3px solid var(--primary);
+            border: 4px solid var(--primary);
             background: white;
-            padding: 6px;
+            padding: 8px;
             cursor: pointer;
+            transition: 0.2s;
+        }
+        .qr-code-img:hover {
+            transform: scale(1.02);
+            border-color: var(--accent);
+        }
+        .qr-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .qr-item {
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+        .qr-item p {
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--gray);
         }
         .upi-link-btn {
             display: inline-flex;
@@ -388,6 +429,26 @@
             border-radius: 50px;
             margin: 5px;
             font-size: 13px;
+        }
+        .terms-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+            font-size: 13px;
+            color: var(--gray);
+        }
+        .terms-checkbox input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+        .terms-checkbox a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .big-red-pay-btn {
+            margin: 20px 0 10px;
         }
         @media (max-width: 768px) {
             section { padding: 50px 0; }
@@ -409,6 +470,8 @@
             .section-header h2 { font-size: 24px; }
             .courses-grid { grid-template-columns: 1fr; }
             .plans-grid { grid-template-columns: repeat(2, 1fr); }
+            .qr-row { flex-direction: column; align-items: center; }
+            .qr-code-img { max-width: 200px; }
         }
     </style>
 </head>
@@ -456,7 +519,7 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
+    <!-- Courses Section - Updated with Extra Courses -->
     <section id="courses">
         <div class="container">
             <div class="section-header">
@@ -470,6 +533,15 @@
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=600" alt="Books"><div class="course-content"><h3>100+ Books Library</h3><p>Self-help, finance, psychology, business, biographies. Upgrade your mindset.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://deepsea-cdn.b-cdn.net/2024/06/uses-of-python.jpg.webp" alt="Python"><div class="course-content"><h3>Python Programming</h3><p>Automation, scripts, data analysis. Create bots, automate tasks, career growth.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600" alt="Jobs"><div class="course-content"><h3>Part-time Job Support</h3><p>Freelancing, data entry, content writing, resume building, project referrals.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600" alt="Instagram Mastery"><div class="course-content"><h3>Instagram Mastery</h3><p>Grow followers, reels strategies, engagement hacks, monetization techniques.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="Digital Marketing"><div class="course-content"><h3>Digital Marketing</h3><p>SEO, social media ads, email marketing, analytics, brand building.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Google Ads"><div class="course-content"><h3>Google Ads</h3><p>PPC, keyword research, campaign optimization, ROI tracking.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600" alt="Landing Page"><div class="course-content"><h3>Website Landing Page</h3><p>High-converting landing pages, UX/UI principles, lead generation.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="ChatGPT"><div class="course-content"><h3>ChatGPT Mastery</h3><p>Prompt engineering, AI tools, automation, content creation with AI.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600" alt="Website Designing"><div class="course-content"><h3>Website Designing</h3><p>Figma, WordPress, Elementor, responsive design, UI trends.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600" alt="Digital Products"><div class="course-content"><h3>Digital Products Business</h3><p>Create and sell ebooks, courses, templates, passive income streams.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600" alt="Facebook Marketing"><div class="course-content"><h3>Facebook Marketing</h3><p>Ads manager, audience targeting, retargeting, sales funnels.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Prompt Engineering"><div class="course-content"><h3>Prompt Engineering for ChatGPT</h3><p>Advanced prompting, AI workflows, optimize outputs, automation.</p></div></div>
             </div>
         </div>
     </section>
@@ -490,7 +562,7 @@
         </div>
     </section>
 
-    <!-- Plans with Enhanced Payment Options -->
+    <!-- Plans Section -->
     <section id="plans">
         <div class="container">
             <div class="section-header">
@@ -507,7 +579,7 @@
         </div>
     </section>
 
-    <!-- Payment Modal with ALL UPI Options, QR, Links, Copy -->
+    <!-- Payment Modal with TWO QR Codes (Increased Size) + Big Red Link -->
     <div id="paymentModal" class="payment-modal">
         <div class="modal-content">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
@@ -518,11 +590,24 @@
                 <strong id="planNameDisplay">Plan</strong> - Amount: ₹<span id="planAmountDisplay">0</span>
             </div>
             
-            <!-- QR Code Section -->
-            <h4><i class="fas fa-qrcode"></i> Scan QR Code</h4>
-            <div style="text-align: center;">
-                <img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true" alt="UPI QR Code" class="qr-code-img" onclick="window.open('https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true', '_blank')">
-                <p style="font-size: 11px;">Click to enlarge | Scan with any UPI app</p>
+            <!-- Two QR Codes with Increased Size -->
+            <h4><i class="fas fa-qrcode"></i> Scan Any QR Code (Tap to Enlarge)</h4>
+            <div class="qr-row">
+                <div class="qr-item">
+                    <img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true" alt="UPI QR Code 1" class="qr-code-img" onclick="window.open('https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true', '_blank')">
+                    <p>📱 QR Code 1</p>
+                </div>
+                <div class="qr-item">
+                    <img src="https://github.com/earningsprogram777/skillspherecodehub/blob/main/WhatsApp%20Image%202026-03-21%20at%2020.21.47.jpeg?raw=true" alt="UPI QR Code 2" class="qr-code-img" onclick="window.open('https://github.com/earningsprogram777/skillspherecodehub/blob/main/WhatsApp%20Image%202026-03-21%20at%2020.21.47.jpeg?raw=true', '_blank')">
+                    <p>📱 QR Code 2</p>
+                </div>
+            </div>
+            
+            <!-- BIG RED PAYMENT LINK BUTTON -->
+            <div class="big-red-pay-btn">
+                <button class="btn btn-red-large" onclick="openBigRedPayLink()">
+                    <i class="fas fa-bolt"></i> 🔴 PAY VIA LINK (PROCEED TO PAY) 🔴
+                </button>
             </div>
             
             <!-- UPI IDs with Copy Feature -->
@@ -539,20 +624,6 @@
                 <div class="payment-card" onclick="copyToClipboard('9985943961')">
                     <i class="fas fa-copy"></i> 9985943961 (Phone)
                     <span class="copy-badge">Copy</span>
-                </div>
-            </div>
-            
-            <!-- Direct Payment Links (UPI Links) -->
-            <h4 style="margin-top: 15px;"><i class="fas fa-link"></i> Direct Payment Links (Click to Pay)</h4>
-            <div class="payment-options-grid">
-                <div class="payment-card" onclick="openUPILink('https://upi.pe/9985943961@mbk')">
-                    <i class="fas fa-external-link-alt"></i> upi.pe/9985943961@mbk
-                </div>
-                <div class="payment-card" onclick="openUPILink('https://w6em.app.link/mRX2QTChG1b')">
-                    <i class="fas fa-external-link-alt"></i> Pay via Link
-                </div>
-                <div class="payment-card" onclick="openUPILink('upi://pay?pa=9985943961@mbk&pn=Skill%20Sphere&am=' + document.getElementById('planAmountDisplay').innerText + '&cu=INR')">
-                    <i class="fas fa-bolt"></i> Direct UPI Pay
                 </div>
             </div>
             
@@ -583,7 +654,7 @@
         </div>
     </section>
 
-    <!-- Registration Form -->
+    <!-- Registration Form with Terms & Conditions -->
     <section id="register">
         <div class="container">
             <div class="section-header"><div class="section-subtitle">JOIN NOW</div><h2>Create Your Account & Get Referral Code</h2></div>
@@ -609,6 +680,13 @@
                     <input type="text" id="transactionId" class="form-control" placeholder="Transaction ID / Payment Details *" required>
                     <input type="text" id="referralInput" class="form-control" placeholder="Referral Code (if any)">
                     <textarea id="goals" class="form-control" rows="2" placeholder="Your learning goals (optional)"></textarea>
+                    
+                    <!-- Terms and Conditions Checkbox -->
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="termsCheckbox" required>
+                        <label for="termsCheckbox">I agree to the <a href="#" id="termsLink">Terms & Conditions</a> and Privacy Policy. I confirm that the information provided is accurate.</label>
+                    </div>
+                    
                     <div id="generatedRefBlock" style="display: none; background: rgba(0,0,0,0.3); padding: 16px; border-radius: 16px; margin: 15px 0; text-align: center;">
                         <h4>🎉 Your Referral Code</h4>
                         <div id="refCodeDisplay" style="font-size: 28px; font-weight: bold; letter-spacing: 2px; color: var(--accent);">CODE</div>
@@ -719,18 +797,18 @@
             navigator.clipboard.writeText(text); 
             showNotification(`✅ Copied: ${text}`);
         }
-        function openUPILink(url) {
-            window.open(url, '_blank');
-            showNotification('🔗 Opening payment link...');
-        }
         function copyAllPaymentDetails() {
-            const details = "UPI IDs:\n9985943961@ybl\n9985943961@mbk\nPhone: 9985943961\nUPI Link: upi.pe/9985943961@mbk";
+            const details = "UPI IDs:\n9985943961@ybl\n9985943961@mbk\nPhone: 9985943961";
             navigator.clipboard.writeText(details);
             showNotification('✅ All payment details copied!');
         }
         function copyPhoneNumber() {
             navigator.clipboard.writeText('9985943961');
             showNotification('✅ Phone number copied: 9985943961');
+        }
+        function openBigRedPayLink() {
+            window.open('https://w6em.app.link/mRX2QTChG1b', '_blank');
+            showNotification('🔴 Opening Big Payment Link...');
         }
         function showNotification(msg) { 
             let n = document.createElement('div'); 
@@ -782,9 +860,20 @@
         phoneField?.addEventListener('input', updateReferralCode);
         function copyReferralCode() { if(currentRefCode) { navigator.clipboard.writeText(currentRefCode); showNotification("✅ Referral code copied!"); } else showNotification("Generate code first"); }
 
-        // Registration Submit
+        // Terms link popup
+        document.getElementById('termsLink')?.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("Terms & Conditions:\n1. You must provide accurate information.\n2. Referral commissions are paid after verification.\n3. Withdrawals require minimum ₹20.\n4. Spamming or fake referrals will lead to account ban.\n5. All payments are non-refundable.\n6. You agree to receive WhatsApp updates.");
+        });
+
+        // Registration Submit with Terms Check
         document.getElementById('registerForm').addEventListener('submit', function(e) {
             e.preventDefault();
+            const termsChecked = document.getElementById('termsCheckbox').checked;
+            if(!termsChecked) {
+                showNotification("❌ Please accept the Terms & Conditions to register.");
+                return;
+            }
             const fullName = document.getElementById('fullName').value.trim();
             const age = document.getElementById('age').value;
             const whatsapp = document.getElementById('whatsapp').value.trim();
@@ -800,7 +889,7 @@
             const timestamp = new Date().toLocaleString('en-IN');
             const planMap = {'50':'₹50 Trial','299':'₹299 Starter','499':'₹499 Pro','999':'₹999 Elite','1499':'₹1499 Lifetime'};
             if(!fullName || !age || whatsapp.length!==10 || !location || !transactionId) { showNotification("❌ Please fill all required fields"); return; }
-            let message = `🎓 NEW REGISTRATION - SKILL SPHERE\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan]}\n💰 Transaction ID: ${transactionId}\n🔗 Your Referral Code: ${finalCode}\nReferred By: ${referredBy}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Thank you for joining!`;
+            let message = `🎓 NEW REGISTRATION - SKILL SPHERE\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan]}\n💰 Transaction ID: ${transactionId}\n🔗 Your Referral Code: ${finalCode}\nReferred By: ${referredBy}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Terms Accepted: Yes\nThank you for joining!`;
             window.open(`https://wa.me/919603003169?text=${encodeURIComponent(message)}`, '_blank');
             showNotification("✅ Registration sent! We'll activate within 1 hour.");
         });
