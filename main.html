@@ -393,15 +393,15 @@
             border-radius: 24px;
             margin: 10px auto;
             display: block;
-            border: 4px solid var(--primary);
             background: white;
             padding: 8px;
-            cursor: pointer;
+            cursor: default;
             transition: 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
         }
         .qr-code-img:hover {
             transform: scale(1.02);
-            border-color: var(--accent);
+            box-shadow: 0 8px 20px rgba(108,99,255,0.4);
         }
         .qr-row {
             display: flex;
@@ -419,16 +419,6 @@
             margin-top: 8px;
             font-size: 12px;
             color: var(--gray);
-        }
-        .upi-link-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: var(--gradient-primary);
-            padding: 10px 20px;
-            border-radius: 50px;
-            margin: 5px;
-            font-size: 13px;
         }
         .terms-checkbox {
             display: flex;
@@ -450,6 +440,16 @@
         .big-red-pay-btn {
             margin: 20px 0 10px;
         }
+        .referral-status {
+            font-size: 12px;
+            margin-top: -8px;
+            margin-bottom: 12px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+        }
+        .status-valid { color: #00D26A; background: rgba(0,210,106,0.2); }
+        .status-invalid { color: #FF3B3B; background: rgba(255,59,59,0.2); }
         @media (max-width: 768px) {
             section { padding: 50px 0; }
             .hero-grid { grid-template-columns: 1fr; text-align: center; }
@@ -492,6 +492,7 @@
                     <a href="#register">Join</a>
                     <a href="#feedback">Feedback</a>
                     <a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank">Channel</a>
+                    <a href="https://earningsprogram777.github.io/ssch/about"  class="btn btn-outline" style="padding: 8px 18px;">About Us</a>
                     <a href="https://earningsprogram777.github.io/mainlogin/loginpage" target="_self" class="btn btn-primary" style="padding: 8px 18px;">Login</a>
                 </div>
             </nav>
@@ -509,7 +510,7 @@
                     <a href="#courses" class="btn btn-outline"><i class="fas fa-book-open"></i> Explore</a>
                 </div>
                 <div class="hero-stats" style="display: flex; gap: 12px; justify-content: center; margin-top: 25px;">
-                    <div style="background: rgba(20,20,43,0.6); padding: 8px 16px; border-radius: 50px;"><i class="fas fa-users"></i> 500+ Members</div>
+                    <div style="background: rgba(20,20,43,0.6); padding: 8px 16px; border-radius: 50px;"><i class="fas fa-users"></i> 100+ Members</div>
                     <div style="background: rgba(20,20,43,0.6); padding: 8px 16px; border-radius: 50px;"><i class="fas fa-rupee-sign"></i> 3-Level Income</div>
                 </div>
             </div>
@@ -519,7 +520,7 @@
         </div>
     </section>
 
-    <!-- Courses Section - Updated with Extra Courses -->
+    <!-- Courses Section -->
     <section id="courses">
         <div class="container">
             <div class="section-header">
@@ -535,12 +536,9 @@
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600" alt="Jobs"><div class="course-content"><h3>Part-time Job Support</h3><p>Freelancing, data entry, content writing, resume building, project referrals.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600" alt="Instagram Mastery"><div class="course-content"><h3>Instagram Mastery</h3><p>Grow followers, reels strategies, engagement hacks, monetization techniques.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600" alt="Digital Marketing"><div class="course-content"><h3>Digital Marketing</h3><p>SEO, social media ads, email marketing, analytics, brand building.</p></div></div>
-                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Google Ads"><div class="course-content"><h3>Google Ads</h3><p>PPC, keyword research, campaign optimization, ROI tracking.</p></div></div>
-                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600" alt="Landing Page"><div class="course-content"><h3>Website Landing Page</h3><p>High-converting landing pages, UX/UI principles, lead generation.</p></div></div>
-                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="ChatGPT"><div class="course-content"><h3>ChatGPT Mastery</h3><p>Prompt engineering, AI tools, automation, content creation with AI.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600" alt="Website Designing"><div class="course-content"><h3>Website Designing</h3><p>Figma, WordPress, Elementor, responsive design, UI trends.</p></div></div>
+                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600" alt="ChatGPT"><div class="course-content"><h3>ChatGPT Mastery</h3><p>Prompt engineering, AI tools, automation, content creation with AI.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=600" alt="Digital Products"><div class="course-content"><h3>Digital Products Business</h3><p>Create and sell ebooks, courses, templates, passive income streams.</p></div></div>
-                <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600" alt="Facebook Marketing"><div class="course-content"><h3>Facebook Marketing</h3><p>Ads manager, audience targeting, retargeting, sales funnels.</p></div></div>
                 <div class="course-card"><img class="course-img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600" alt="Prompt Engineering"><div class="course-content"><h3>Prompt Engineering for ChatGPT</h3><p>Advanced prompting, AI workflows, optimize outputs, automation.</p></div></div>
             </div>
         </div>
@@ -579,7 +577,7 @@
         </div>
     </section>
 
-    <!-- Payment Modal with TWO QR Codes (Increased Size) + Big Red Link -->
+    <!-- Payment Modal -->
     <div id="paymentModal" class="payment-modal">
         <div class="modal-content">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
@@ -590,44 +588,31 @@
                 <strong id="planNameDisplay">Plan</strong> - Amount: ₹<span id="planAmountDisplay">0</span>
             </div>
             
-            <!-- Two QR Codes with Increased Size -->
-            <h4><i class="fas fa-qrcode"></i> Scan Any QR Code (Tap to Enlarge)</h4>
+            <h4><i class="fas fa-qrcode"></i> Scan Any QR Code</h4>
             <div class="qr-row">
                 <div class="qr-item">
-                    <img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true" alt="UPI QR Code 1" class="qr-code-img" onclick="window.open('https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true', '_blank')">
+                    <img src="https://github.com/earningsprogram777/time-pass/blob/main/qr%20code.jpeg?raw=true" alt="UPI QR Code 1" class="qr-code-img">
                     <p>📱 QR Code 1</p>
                 </div>
                 <div class="qr-item">
-                    <img src="https://github.com/earningsprogram777/skillspherecodehub/blob/main/WhatsApp%20Image%202026-03-21%20at%2020.21.47.jpeg?raw=true" alt="UPI QR Code 2" class="qr-code-img" onclick="window.open('https://github.com/earningsprogram777/skillspherecodehub/blob/main/WhatsApp%20Image%202026-03-21%20at%2020.21.47.jpeg?raw=true', '_blank')">
+                    <img src="https://github.com/earningsprogram777/skillspherecodehub/blob/main/WhatsApp%20Image%202026-03-21%20at%2020.21.47.jpeg?raw=true" alt="UPI QR Code 2" class="qr-code-img">
                     <p>📱 QR Code 2</p>
                 </div>
             </div>
             
-            <!-- BIG RED PAYMENT LINK BUTTON -->
             <div class="big-red-pay-btn">
                 <button class="btn btn-red-large" onclick="openBigRedPayLink()">
                     <i class="fas fa-bolt"></i> 🔴 PAY VIA LINK (PROCEED TO PAY) 🔴
                 </button>
             </div>
             
-            <!-- UPI IDs with Copy Feature -->
             <h4 style="margin-top: 20px;"><i class="fas fa-mobile-alt"></i> UPI IDs (Click to Copy)</h4>
             <div class="payment-options-grid">
-                <div class="payment-card" onclick="copyToClipboard('9985943961@ybl')">
-                    <i class="fas fa-copy"></i> 9985943961@ybl
-                    <span class="copy-badge">Copy</span>
-                </div>
-                <div class="payment-card" onclick="copyToClipboard('9985943961@mbk')">
-                    <i class="fas fa-copy"></i> 9985943961@mbk
-                    <span class="copy-badge">Copy</span>
-                </div>
-                <div class="payment-card" onclick="copyToClipboard('9985943961')">
-                    <i class="fas fa-copy"></i> 9985943961 (Phone)
-                    <span class="copy-badge">Copy</span>
-                </div>
+                <div class="payment-card" onclick="copyToClipboard('9985943961@ybl')"><i class="fas fa-copy"></i> 9985943961@ybl <span class="copy-badge">Copy</span></div>
+                <div class="payment-card" onclick="copyToClipboard('9985943961@mbk')"><i class="fas fa-copy"></i> 9985943961@mbk <span class="copy-badge">Copy</span></div>
+                <div class="payment-card" onclick="copyToClipboard('9985943961')"><i class="fas fa-copy"></i> 9985943961 (Phone) <span class="copy-badge">Copy</span></div>
             </div>
             
-            <!-- Additional Copy Options -->
             <h4 style="margin-top: 15px;"><i class="fas fa-copy"></i> Copy All Payment Details</h4>
             <div class="payment-options-grid">
                 <button class="btn btn-outline" style="flex:1;" onclick="copyAllPaymentDetails()"><i class="fas fa-copy"></i> Copy All UPI IDs</button>
@@ -646,15 +631,12 @@
     <!-- Ads Section -->
     <section id="ads">
         <div class="container">
-            <div class="section-header">
-                <div class="section-subtitle">HOT DEALS</div>
-                <h2>Sponsored Offers</h2>
-            </div>
+            <div class="section-header"><div class="section-subtitle">HOT DEALS</div><h2>Sponsored Offers</h2></div>
             <div id="adsContainer" class="ads-grid">Loading amazing offers...</div>
         </div>
     </section>
 
-    <!-- Registration Form with Terms & Conditions -->
+    <!-- Registration Form with Referral Code Validation (Mandatory, from Google Sheets Column O) -->
     <section id="register">
         <div class="container">
             <div class="section-header"><div class="section-subtitle">JOIN NOW</div><h2>Create Your Account & Get Referral Code</h2></div>
@@ -678,13 +660,13 @@
                         <option value="1499">₹1499 (Lifetime) - L1:500 L2:240 L3:150</option>
                     </select>
                     <input type="text" id="transactionId" class="form-control" placeholder="Transaction ID / Payment Details *" required>
-                    <input type="text" id="referralInput" class="form-control" placeholder="Referral Code (if any)">
+                    <input type="text" id="referralInput" class="form-control" placeholder="Referral Code * (Mandatory)" required>
+                    <div id="referralStatus" class="referral-status"></div>
                     <textarea id="goals" class="form-control" rows="2" placeholder="Your learning goals (optional)"></textarea>
                     
-                    <!-- Terms and Conditions Checkbox -->
                     <div class="terms-checkbox">
                         <input type="checkbox" id="termsCheckbox" required>
-                        <label for="termsCheckbox">I agree to the <a href="#" id="termsLink">Terms & Conditions</a> and Privacy Policy. I confirm that the information provided is accurate.</label>
+                        <label for="termsCheckbox">I agree to the <a href="#" id="termsLink">Terms & Conditions</a> and Privacy Policy.</label>
                     </div>
                     
                     <div id="generatedRefBlock" style="display: none; background: rgba(0,0,0,0.3); padding: 16px; border-radius: 16px; margin: 15px 0; text-align: center;">
@@ -706,12 +688,8 @@
                 <form id="feedbackForm">
                     <input type="text" id="fbName" class="form-control" placeholder="Your Name *" required>
                     <input type="tel" id="fbWhatsapp" class="form-control" placeholder="WhatsApp Number *" required>
-                    <select id="fbType" class="form-control">
-                        <option value="Feedback">💬 Feedback</option>
-                        <option value="Suggestion">✨ New Suggestion</option>
-                        <option value="Complaint">⚠️ Complaint</option>
-                    </select>
-                    <textarea id="fbMessage" class="form-control" rows="4" placeholder="Share your thoughts, ideas, or suggestions..." required></textarea>
+                    <select id="fbType" class="form-control"><option value="Feedback">💬 Feedback</option><option value="Suggestion">✨ New Suggestion</option><option value="Complaint">⚠️ Complaint</option></select>
+                    <textarea id="fbMessage" class="form-control" rows="4" placeholder="Share your thoughts..." required></textarea>
                     <button type="submit" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Send Feedback via WhatsApp</button>
                 </form>
             </div>
@@ -754,7 +732,7 @@
         <div class="container">
             <div class="section-header"><div class="section-subtitle">ABOUT US</div><h2>Skill Sphere Code Hub</h2></div>
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-                <div><p style="color: var(--gray);">We empower individuals with high-income skills and a sustainable earning system. Our "Learn + Earn" model helps students, job seekers, and entrepreneurs build their future.</p><p style="margin-top: 15px;">CEO: Anil Mahankali | 24/7 Support | 500+ active learners</p><div class="social-links" style="margin-top: 20px;"><a href="https://www.instagram.com/skillsspherecodehub" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/919603003169" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="mailto:skillspherecodehub@gmail.com"><i class="fas fa-envelope"></i></a></div></div>
+                <div><p style="color: var(--gray);">We empower individuals with high-income skills and a sustainable earning system. Our "Learn + Earn" model helps students, job seekers, and entrepreneurs build their future.</p><p style="margin-top: 15px;">CEO: Anil Mahankali | 24/7 Support | 100+ active learners</p><div class="social-links" style="margin-top: 20px;"><a href="https://www.instagram.com/skillsspherecodehub" target="_blank"><i class="fab fa-instagram"></i></a><a href="https://wa.me/919603003169" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank"><i class="fab fa-whatsapp"></i></a><a href="mailto:skillspherecodehub@gmail.com"><i class="fas fa-envelope"></i></a></div></div>
                 <div class="contact-form"><h3>Quick Contact</h3><form id="contactForm"><input type="text" id="contactName" class="form-control" placeholder="Your Name" required><input type="tel" id="contactPhone" class="form-control" placeholder="WhatsApp Number" required><textarea id="contactMsg" rows="3" class="form-control" placeholder="Your Message"></textarea><button type="submit" class="btn btn-primary" style="width:100%;"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button></form></div>
             </div>
         </div>
@@ -786,39 +764,111 @@
     <script>
         AOS.init({ duration: 600, once: true });
         
-        // Payment Modal Functions
-        function openPaymentModal(amount, planName) {
-            document.getElementById('planNameDisplay').innerText = planName;
-            document.getElementById('planAmountDisplay').innerText = amount;
-            document.getElementById('paymentModal').style.display = 'flex';
+        // Enhanced copy functions with fallback
+        function copyToClipboard(text) {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => showNotification(`✅ Copied: ${text}`)).catch(() => fallbackCopy(text));
+            } else { fallbackCopy(text); }
         }
-        function closePaymentModal() { document.getElementById('paymentModal').style.display = 'none'; }
-        function copyToClipboard(text) { 
-            navigator.clipboard.writeText(text); 
+        function fallbackCopy(text) {
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
             showNotification(`✅ Copied: ${text}`);
         }
-        function copyAllPaymentDetails() {
-            const details = "UPI IDs:\n9985943961@ybl\n9985943961@mbk\nPhone: 9985943961";
-            navigator.clipboard.writeText(details);
-            showNotification('✅ All payment details copied!');
-        }
-        function copyPhoneNumber() {
-            navigator.clipboard.writeText('9985943961');
-            showNotification('✅ Phone number copied: 9985943961');
-        }
-        function openBigRedPayLink() {
-            window.open('https://w6em.app.link/mRX2QTChG1b', '_blank');
-            showNotification('🔴 Opening Big Payment Link...');
-        }
-        function showNotification(msg) { 
-            let n = document.createElement('div'); 
-            n.className = 'notification'; 
-            n.innerText = msg; 
-            document.body.appendChild(n); 
-            setTimeout(()=> n.remove(), 3000); 
-        }
+        function copyAllPaymentDetails() { copyToClipboard("UPI IDs:\n9985943961@ybl\n9985943961@mbk\nPhone: 9985943961"); }
+        function copyPhoneNumber() { copyToClipboard('9985943961'); }
+        function openBigRedPayLink() { window.open('https://w6em.app.link/mRX2QTChG1b', '_blank'); showNotification('🔴 Opening Big Payment Link...'); }
+        function showNotification(msg) { let n = document.createElement('div'); n.className = 'notification'; n.innerText = msg; document.body.appendChild(n); setTimeout(()=> n.remove(), 3000); }
+        function openPaymentModal(amount, planName) { document.getElementById('planNameDisplay').innerText = planName; document.getElementById('planAmountDisplay').innerText = amount; document.getElementById('paymentModal').style.display = 'flex'; }
+        function closePaymentModal() { document.getElementById('paymentModal').style.display = 'none'; }
 
-        // Google Sheets Ads Fetch
+        // Load valid referral codes from Google Sheets (Column O - index 14)
+        let validReferralCodes = new Set();
+        async function loadReferralCodes() {
+            try {
+                const res = await fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0');
+                const text = await res.text();
+                const json = JSON.parse(text.substring(47).slice(0, -2));
+                const rows = json.table.rows || [];
+                for(let i = 1; i < rows.length; i++) {
+                    if(rows[i].c && rows[i].c[14] && rows[i].c[14].v) {
+                        let code = rows[i].c[14].v.toString().trim().toUpperCase();
+                        if(code) validReferralCodes.add(code);
+                    }
+                }
+                console.log("Referral codes loaded:", validReferralCodes.size);
+            } catch(e) { console.warn("Could not load referral codes"); }
+        }
+        loadReferralCodes();
+
+        // Referral validation
+        const referralInput = document.getElementById('referralInput');
+        const referralStatusDiv = document.getElementById('referralStatus');
+        function validateReferralCode() {
+            let code = referralInput.value.trim().toUpperCase();
+            if(code === "") { referralStatusDiv.innerHTML = ""; referralStatusDiv.className = "referral-status"; return false; }
+            if(validReferralCodes.has(code)) {
+                referralStatusDiv.innerHTML = "✅ Valid Referral Code!";
+                referralStatusDiv.className = "referral-status status-valid";
+                return true;
+            } else {
+                referralStatusDiv.innerHTML = "❌ Invalid Referral Code. Please enter a valid code from an existing member.";
+                referralStatusDiv.className = "referral-status status-invalid";
+                return false;
+            }
+        }
+        referralInput.addEventListener('input', validateReferralCode);
+
+        // Registration with mandatory valid referral
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            if(!document.getElementById('termsCheckbox').checked) { showNotification("❌ Please accept Terms & Conditions."); return; }
+            let referralCode = referralInput.value.trim().toUpperCase();
+            if(!validReferralCodes.has(referralCode)) { showNotification("❌ Invalid or missing referral code. Please enter a valid referral code."); return; }
+            
+            const fullName = document.getElementById('fullName').value.trim();
+            const age = document.getElementById('age').value;
+            const whatsapp = document.getElementById('whatsapp').value.trim();
+            const email = document.getElementById('email').value.trim() || 'Not provided';
+            const password = document.getElementById('password').value;
+            const location = document.getElementById('location').value.trim();
+            const qualification = document.getElementById('qualification').value;
+            const plan = document.getElementById('planSelect').value;
+            const transactionId = document.getElementById('transactionId').value.trim();
+            const goals = document.getElementById('goals').value.trim() || 'Not specified';
+            const finalCode = (fullName.slice(0,3).toUpperCase() + whatsapp.slice(-4));
+            const timestamp = new Date().toLocaleString('en-IN');
+            const planMap = {'50':'₹50 Trial','299':'₹299 Starter','499':'₹499 Pro','999':'₹999 Elite','1499':'₹1499 Lifetime'};
+            if(!fullName || !age || whatsapp.length!==10 || !location || !transactionId) { showNotification("❌ Please fill all required fields"); return; }
+            let message = `🎓 NEW REGISTRATION - SKILL SPHERE\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan]}\n💰 Transaction ID: ${transactionId}\n🔗 Your Referral Code: ${finalCode}\nReferred By: ${referralCode}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Terms Accepted: Yes`;
+            window.open(`https://wa.me/919603003169?text=${encodeURIComponent(message)}`, '_blank');
+            showNotification("✅ Registration sent! We'll activate within 1 hour.");
+        });
+
+        // Generate own referral code
+        const nameField = document.getElementById('fullName');
+        const phoneField = document.getElementById('whatsapp');
+        const refBlock = document.getElementById('generatedRefBlock');
+        const refDisplay = document.getElementById('refCodeDisplay');
+        let currentRefCode = "";
+        function updateReferralCode() { 
+            let name = nameField?.value.trim().toUpperCase().replace(/[^A-Z]/g, '').slice(0,4); 
+            let phone = phoneField?.value.trim().slice(-4); 
+            if(name && name.length>=2 && phone && phone.length===4) { 
+                currentRefCode = name + phone; 
+                refDisplay.innerText = currentRefCode; 
+                refBlock.style.display = "block"; 
+            } else refBlock.style.display = "none"; 
+        }
+        nameField?.addEventListener('input', updateReferralCode);
+        phoneField?.addEventListener('input', updateReferralCode);
+        function copyReferralCode() { if(currentRefCode) { copyToClipboard(currentRefCode); showNotification("✅ Referral code copied!"); } else showNotification("Generate code first"); }
+
+        // Ads fetch
         async function fetchAds() {
             try {
                 const res = await fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0');
@@ -838,64 +888,11 @@
             } catch(e) { fallbackAds(); }
         }
         function displayAds(ads) { document.getElementById('adsContainer').innerHTML = ads.map(ad => `<div class="ad-card" onclick="window.open('${ad.link}','_blank')"><img src="${ad.image}" onerror="this.src='https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400'"><div class="ad-card-content"><h4 style="font-size:14px;">${ad.title.substring(0, 28)}</h4><p style="font-size:11px; color:var(--gray);">${ad.desc.substring(0, 45)}</p><div class="ad-price">₹${ad.price}</div><small style="font-size:10px;">${ad.note}</small></div></div>`).join(''); }
-        function fallbackAds() { displayAds([{title:"Special Offer",desc:"Limited time deal",image:"https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400",link:"#",price:"999",note:"Hot"},{title:"Premium Deal",desc:"Exclusive",image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",link:"#",price:"499",note:"Limited"},{title:"Course Bundle",desc:"5 courses",image:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400",link:"#",price:"1999",note:"Save 40%"},{title:"Stock Market",desc:"Learn trading",image:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400",link:"#",price:"299",note:"Bonus"}]); }
+        function fallbackAds() { displayAds([{title:"Special Offer",desc:"Limited time deal",image:"https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400",link:"#",price:"999",note:"Hot"},{title:"Premium Deal",desc:"Exclusive",image:"https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400",link:"#",price:"499",note:"Limited"}]); }
         fetchAds();
 
-        // Referral Code Generator
-        const nameField = document.getElementById('fullName');
-        const phoneField = document.getElementById('whatsapp');
-        const refBlock = document.getElementById('generatedRefBlock');
-        const refDisplay = document.getElementById('refCodeDisplay');
-        let currentRefCode = "";
-        function updateReferralCode() { 
-            let name = nameField?.value.trim().toUpperCase().replace(/[^A-Z]/g, '').slice(0,4); 
-            let phone = phoneField?.value.trim().slice(-4); 
-            if(name && name.length>=2 && phone && phone.length===4) { 
-                currentRefCode = name + phone; 
-                refDisplay.innerText = currentRefCode; 
-                refBlock.style.display = "block"; 
-            } else refBlock.style.display = "none"; 
-        }
-        nameField?.addEventListener('input', updateReferralCode);
-        phoneField?.addEventListener('input', updateReferralCode);
-        function copyReferralCode() { if(currentRefCode) { navigator.clipboard.writeText(currentRefCode); showNotification("✅ Referral code copied!"); } else showNotification("Generate code first"); }
-
-        // Terms link popup
-        document.getElementById('termsLink')?.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert("Terms & Conditions:\n1. You must provide accurate information.\n2. Referral commissions are paid after verification.\n3. Withdrawals require minimum ₹20.\n4. Spamming or fake referrals will lead to account ban.\n5. All payments are non-refundable.\n6. You agree to receive WhatsApp updates.");
-        });
-
-        // Registration Submit with Terms Check
-        document.getElementById('registerForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const termsChecked = document.getElementById('termsCheckbox').checked;
-            if(!termsChecked) {
-                showNotification("❌ Please accept the Terms & Conditions to register.");
-                return;
-            }
-            const fullName = document.getElementById('fullName').value.trim();
-            const age = document.getElementById('age').value;
-            const whatsapp = document.getElementById('whatsapp').value.trim();
-            const email = document.getElementById('email').value.trim() || 'Not provided';
-            const password = document.getElementById('password').value;
-            const location = document.getElementById('location').value.trim();
-            const qualification = document.getElementById('qualification').value;
-            const plan = document.getElementById('planSelect').value;
-            const transactionId = document.getElementById('transactionId').value.trim();
-            const referredBy = document.getElementById('referralInput').value.trim() || 'None';
-            const goals = document.getElementById('goals').value.trim() || 'Not specified';
-            const finalCode = currentRefCode || (fullName.slice(0,3).toUpperCase() + whatsapp.slice(-4));
-            const timestamp = new Date().toLocaleString('en-IN');
-            const planMap = {'50':'₹50 Trial','299':'₹299 Starter','499':'₹499 Pro','999':'₹999 Elite','1499':'₹1499 Lifetime'};
-            if(!fullName || !age || whatsapp.length!==10 || !location || !transactionId) { showNotification("❌ Please fill all required fields"); return; }
-            let message = `🎓 NEW REGISTRATION - SKILL SPHERE\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan]}\n💰 Transaction ID: ${transactionId}\n🔗 Your Referral Code: ${finalCode}\nReferred By: ${referredBy}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Terms Accepted: Yes\nThank you for joining!`;
-            window.open(`https://wa.me/919603003169?text=${encodeURIComponent(message)}`, '_blank');
-            showNotification("✅ Registration sent! We'll activate within 1 hour.");
-        });
-
-        // Feedback Form
-        document.getElementById('feedbackForm').addEventListener('submit', function(e){
+        // Other forms
+        document.getElementById('feedbackForm')?.addEventListener('submit', function(e){
             e.preventDefault();
             let name = document.getElementById('fbName').value.trim();
             let phone = document.getElementById('fbWhatsapp').value.trim();
@@ -907,9 +904,7 @@
             showNotification("✅ Thank you for your valuable feedback!");
             document.getElementById('feedbackForm').reset();
         });
-
-        // Ad Submit
-        document.getElementById('adSubmitForm').addEventListener('submit', function(e){
+        document.getElementById('adSubmitForm')?.addEventListener('submit', function(e){
             e.preventDefault();
             let title = document.getElementById('adTitle').value.trim();
             let desc = document.getElementById('adDesc').value.trim();
@@ -924,8 +919,6 @@
             showNotification("✅ Ad submitted! Our team will review.");
             document.getElementById('adSubmitForm').reset();
         });
-
-        // Contact Form
         document.getElementById('contactForm')?.addEventListener('submit', function(e){
             e.preventDefault();
             let name = document.getElementById('contactName').value.trim();
@@ -935,10 +928,9 @@
             window.open(`https://wa.me/919603003169?text=${encodeURIComponent(text)}`, '_blank');
             showNotification("✅ Message sent!");
         });
-
-        // Mobile Menu Toggle
         document.getElementById('mobileBtn')?.addEventListener('click', ()=> document.getElementById('navLinks').classList.toggle('active'));
         document.querySelectorAll('.nav-links a').forEach(link => link.addEventListener('click', ()=> document.getElementById('navLinks')?.classList.remove('active')));
+        document.getElementById('termsLink')?.addEventListener('click', (e) => { e.preventDefault(); alert("Terms & Conditions:\n1. You must provide accurate information.\n2. Referral commissions are paid after verification.\n3. Withdrawals require minimum ₹20.\n4. Spamming or fake referrals will lead to account ban.\n5. All payments are non-refundable.\n6. You agree to receive WhatsApp updates."); });
     </script>
 </body>
 </html>
