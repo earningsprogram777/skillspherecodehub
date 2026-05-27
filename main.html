@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>MULTICONNECT | Learn 29+ AI & Digital Skills • Earn From Anywhere</title>
-    <meta name="description" content="Join MULTICONNECT for lifetime access to 29+ high-value AI & digital marketing courses. Earn through our work-based 3-level referral system with weekly bonuses and a 7-day money-back guarantee.">
+    <title>MULTICONNECT | Learn 30+ AI & Digital Skills • Earn From Anywhere</title>
+    <meta name="description" content="Join MULTICONNECT for lifetime access to 30+ high-value AI & digital marketing courses. Earn through our work-based 3-level referral system with weekly bonuses and a 7-day money-back guarantee.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -30,14 +30,20 @@
             --radius: 16px;
             --radius-lg: 24px;
             --radius-xl: 32px;
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
-            --shadow: 0 8px 30px rgba(0,0,0,0.4);
-            --shadow-glow: 0 0 40px rgba(37,99,235,0.25);
-            --shadow-gold: 0 0 40px rgba(245,158,11,0.25);
-            --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            --shadow-glow: 0 0 40px rgba(37, 99, 235, 0.25);
+            --shadow-gold: 0 0 40px rgba(245, 158, 11, 0.25);
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        * { margin:0; padding:0; box-sizing:border-box; }
-        html { scroll-behavior:smooth; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background: var(--bg);
@@ -46,229 +52,1159 @@
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
-        .container { max-width:1240px; margin:0 auto; padding:0 24px; }
-        section { padding:80px 0; position:relative; }
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        section {
+            padding: 80px 0;
+            position: relative;
+        }
         .section-badge {
-            display:inline-flex; align-items:center; gap:8px;
-            background: rgba(37,99,235,0.15); color:#60a5fa;
-            padding:8px 18px; border-radius:60px; font-size:13px; font-weight:700;
-            letter-spacing:0.6px; text-transform:uppercase; margin-bottom:14px;
-            border:1px solid rgba(37,99,235,0.25);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(37, 99, 235, 0.15);
+            color: #60a5fa;
+            padding: 8px 18px;
+            border-radius: 60px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            border: 1px solid rgba(37, 99, 235, 0.25);
         }
         .section-title {
-            font-size:34px; font-weight:800; line-height:1.2; margin-bottom:12px; letter-spacing:-0.5px;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
         }
         .section-title .highlight {
             background: linear-gradient(135deg, #60a5fa, #fbbf24);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
-        .section-subtitle { color:var(--gray); font-size:15px; max-width:600px; line-height:1.6; }
-        .text-center { text-align:center; }
-        .mx-auto { margin-left:auto; margin-right:auto; }
+        .section-subtitle {
+            color: var(--gray);
+            font-size: 15px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
         .btn {
-            display:inline-flex; align-items:center; justify-content:center; gap:8px;
-            padding:13px 26px; border-radius:60px; font-weight:700; font-size:14px;
-            cursor:pointer; transition:var(--transition); text-decoration:none; white-space:nowrap;
-            border:none; letter-spacing:0.3px; position:relative; overflow:hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 13px 26px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-decoration: none;
+            white-space: nowrap;
+            border: none;
+            letter-spacing: 0.3px;
+            position: relative;
+            overflow: hidden;
         }
-        .btn-primary { background: linear-gradient(135deg,#2563eb,#1d4ed8); color:#fff; box-shadow:0 4px 16px rgba(37,99,235,0.4); }
-        .btn-primary:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(37,99,235,0.55); }
-        .btn-accent { background: linear-gradient(135deg,#f59e0b,#d97706); color:#0f172a; font-weight:800; box-shadow:0 4px 16px rgba(245,158,11,0.4); animation:pulse-gold 2.5s infinite; }
-        @keyframes pulse-gold { 0%,100%{ box-shadow:0 4px 16px rgba(245,158,11,0.4); } 50%{ box-shadow:0 10px 32px rgba(245,158,11,0.7); } }
-        .btn-accent:hover { transform:translateY(-3px); animation:none; box-shadow:0 12px 32px rgba(245,158,11,0.6); }
-        .btn-outline { background:transparent; border:2px solid rgba(255,255,255,0.3); color:#fff; }
-        .btn-outline:hover { border-color:#fff; background:rgba(255,255,255,0.05); transform:translateY(-2px); }
-        .btn-success { background: linear-gradient(135deg,#10b981,#059669); color:#fff; box-shadow:0 4px 16px rgba(16,185,129,0.4); }
-        .btn-success:hover { transform:translateY(-3px); box-shadow:0 10px 28px rgba(16,185,129,0.55); }
-        .btn-lg { padding:16px 32px; font-size:16px; border-radius:60px; }
-        .btn-block { width:100%; justify-content:center; }
-        .btn-red-large { background: linear-gradient(135deg,#ef4444,#dc2626); color:#fff; font-size:17px; padding:16px 28px; font-weight:800; box-shadow:0 6px 20px rgba(239,68,68,0.4); width:100%; justify-content:center; border-radius:60px; letter-spacing:0.5px; }
-        .btn-red-large:hover { transform:translateY(-3px); box-shadow:0 12px 28px rgba(239,68,68,0.55); }
+        .btn-primary {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(37, 99, 235, 0.55);
+        }
+        .btn-accent {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            font-weight: 800;
+            box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+            animation: pulse-gold 2.5s infinite;
+        }
+        @keyframes pulse-gold {
+            0%,
+            100% {
+                box-shadow: 0 4px 16px rgba(245, 158, 11, 0.4);
+            }
+            50% {
+                box-shadow: 0 10px 32px rgba(245, 158, 11, 0.7);
+            }
+        }
+        .btn-accent:hover {
+            transform: translateY(-3px);
+            animation: none;
+            box-shadow: 0 12px 32px rgba(245, 158, 11, 0.6);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+        }
+        .btn-outline:hover {
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-2px);
+        }
+        .btn-success {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4);
+        }
+        .btn-success:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 28px rgba(16, 185, 129, 0.55);
+        }
+        .btn-lg {
+            padding: 16px 32px;
+            font-size: 16px;
+            border-radius: 60px;
+        }
+        .btn-block {
+            width: 100%;
+            justify-content: center;
+        }
+        .btn-red-large {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+            color: #fff;
+            font-size: 17px;
+            padding: 16px 28px;
+            font-weight: 800;
+            box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+            width: 100%;
+            justify-content: center;
+            border-radius: 60px;
+            letter-spacing: 0.5px;
+        }
+        .btn-red-large:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(239, 68, 68, 0.55);
+        }
 
         /* Header */
-        header { position:fixed; top:0; width:100%; background:rgba(11,17,32,0.92); backdrop-filter:blur(20px); border-bottom:1px solid rgba(255,255,255,0.06); z-index:1000; transition:var(--transition); }
-        header.scrolled { box-shadow:0 4px 24px rgba(0,0,0,0.5); }
-        nav { display:flex; justify-content:space-between; align-items:center; padding:14px 0; gap:16px; }
-        .logo { display:flex; align-items:center; gap:10px; font-size:20px; font-weight:800; flex-shrink:0; letter-spacing:-0.3px; }
-        .logo-icon { width:40px; height:40px; background:linear-gradient(135deg,#2563eb,#1d4ed8); border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:20px; color:#fff; box-shadow:0 4px 12px rgba(37,99,235,0.4); }
-        .nav-links { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
-        .nav-links a { color:var(--gray-light); font-weight:500; font-size:13px; text-decoration:none; padding:8px 14px; border-radius:50px; transition:var(--transition); white-space:nowrap; }
-        .nav-links a:hover { color:#fff; background:rgba(255,255,255,0.06); }
-        .nav-links .nav-cta { background:var(--primary); color:#fff !important; font-weight:700; padding:9px 18px; border-radius:50px; }
-        .nav-links .nav-cta:hover { background:var(--primary-dark); box-shadow:0 4px 16px rgba(37,99,235,0.4); }
-        .nav-whatsapp { background:rgba(16,185,129,0.2) !important; color:#34d399 !important; font-weight:700 !important; border:1px solid rgba(16,185,129,0.3); animation:pulse-green-nav 2.5s infinite; }
-        @keyframes pulse-green-nav { 0%,100%{ box-shadow:0 0 0 0 rgba(16,185,129,0.3); } 50%{ box-shadow:0 0 0 12px rgba(16,185,129,0); } }
-        .mobile-menu-btn { display:none; background:rgba(255,255,255,0.08); border:1px solid rgba(255,255,255,0.15); color:#fff; font-size:22px; cursor:pointer; padding:10px 14px; border-radius:12px; transition:var(--transition); }
-        .mobile-menu-btn:hover { background:rgba(255,255,255,0.15); }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(11, 17, 32, 0.92);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+        header.scrolled {
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 0;
+            gap: 16px;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: 800;
+            flex-shrink: 0;
+            letter-spacing: -0.3px;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+        }
+        .nav-links {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            color: var(--gray-light);
+            font-weight: 500;
+            font-size: 13px;
+            text-decoration: none;
+            padding: 8px 14px;
+            border-radius: 50px;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+        .nav-links a:hover {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .nav-links .nav-cta {
+            background: var(--primary);
+            color: #fff !important;
+            font-weight: 700;
+            padding: 9px 18px;
+            border-radius: 50px;
+        }
+        .nav-links .nav-cta:hover {
+            background: var(--primary-dark);
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.4);
+        }
+        .nav-whatsapp {
+            background: rgba(16, 185, 129, 0.2) !important;
+            color: #34d399 !important;
+            font-weight: 700 !important;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            animation: pulse-green-nav 2.5s infinite;
+        }
+        @keyframes pulse-green-nav {
+            0%,
+            100% {
+                box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.3);
+            }
+            50% {
+                box-shadow: 0 0 0 12px rgba(16, 185, 129, 0);
+            }
+        }
+        .mobile-menu-btn {
+            display: none;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 10px 14px;
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+        .mobile-menu-btn:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
 
         /* Hero */
-        .hero { padding-top:120px; padding-bottom:60px; position:relative; overflow:hidden; }
-        .hero::before { content:''; position:absolute; top:-200px; right:-200px; width:600px; height:600px; background:radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%); border-radius:50%; pointer-events:none; }
-        .hero::after { content:''; position:absolute; bottom:-150px; left:-150px; width:500px; height:500px; background:radial-gradient(circle, rgba(245,158,11,0.08) 0%, transparent 70%); border-radius:50%; pointer-events:none; }
-        .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center; position:relative; z-index:1; }
-        .hero h1 { font-size:40px; font-weight:800; line-height:1.2; letter-spacing:-1px; margin-bottom:16px; }
-        .hero h1 .gradient-text { background:linear-gradient(135deg, #60a5fa, #fbbf24); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-        .hero-desc { color:var(--gray); font-size:16px; margin-bottom:20px; line-height:1.7; }
-        .hero-badges { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:20px; }
-        .hero-badge { display:inline-flex; align-items:center; gap:6px; padding:8px 16px; border-radius:50px; font-size:12px; font-weight:700; letter-spacing:0.3px; }
-        .badge-blue { background:rgba(37,99,235,0.2); color:#93bbfd; border:1px solid rgba(37,99,235,0.3); }
-        .badge-green { background:rgba(16,185,129,0.2); color:#6ee7b7; border:1px solid rgba(16,185,129,0.3); }
-        .badge-gold { background:rgba(245,158,11,0.2); color:#fcd34d; border:1px solid rgba(245,158,11,0.3); }
-        .hero-cta-row { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
-        .hero-image-wrapper { position:relative; }
-        .hero-image-wrapper img { width:100%; border-radius:var(--radius-lg); box-shadow:var(--shadow); }
-        .hero-floating-card { position:absolute; bottom:-20px; left:-20px; background:var(--dark-card); border-radius:var(--radius); padding:16px 20px; border:1px solid rgba(255,255,255,0.1); box-shadow:var(--shadow); display:flex; align-items:center; gap:12px; }
-        .hero-floating-card .icon-circle { width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,#10b981,#059669); display:flex; align-items:center; justify-content:center; font-size:18px; color:#fff; }
-        .hero-floating-card .info .number { font-weight:800; font-size:20px; color:#fff; }
-        .hero-floating-card .info .label { font-size:11px; color:var(--gray); }
-        .stats-strip { display:flex; gap:20px; flex-wrap:wrap; justify-content:center; margin-top:30px; position:relative; z-index:1; }
-        .stat-item { background:rgba(30,41,59,0.7); border:1px solid rgba(255,255,255,0.06); padding:16px 24px; border-radius:50px; display:flex; align-items:center; gap:10px; font-weight:600; font-size:14px; backdrop-filter:blur(8px); }
-        .stat-item i { color:var(--accent); font-size:18px; }
+        .hero {
+            padding-top: 120px;
+            padding-bottom: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -150px;
+            left: -150px;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            margin-bottom: 16px;
+        }
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, #60a5fa, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-desc {
+            color: var(--gray);
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+        .hero-badges {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+        .badge-blue {
+            background: rgba(37, 99, 235, 0.2);
+            color: #93bbfd;
+            border: 1px solid rgba(37, 99, 235, 0.3);
+        }
+        .badge-green {
+            background: rgba(16, 185, 129, 0.2);
+            color: #6ee7b7;
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        .badge-gold {
+            background: rgba(245, 158, 11, 0.2);
+            color: #fcd34d;
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .hero-cta-row {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .hero-image-wrapper {
+            position: relative;
+        }
+        .hero-image-wrapper img {
+            width: 100%;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow);
+        }
+        .hero-floating-card {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .hero-floating-card .icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #10b981, #059669);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #fff;
+        }
+        .hero-floating-card .info .number {
+            font-weight: 800;
+            font-size: 20px;
+            color: #fff;
+        }
+        .hero-floating-card .info .label {
+            font-size: 11px;
+            color: var(--gray);
+        }
+        .stats-strip {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .stat-item {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 16px 24px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 14px;
+            backdrop-filter: blur(8px);
+        }
+        .stat-item i {
+            color: var(--accent);
+            font-size: 18px;
+        }
 
         /* Guarantee Banner */
-        .guarantee-banner { background:linear-gradient(135deg, rgba(16,185,129,0.1) 0%, rgba(5,150,105,0.08) 100%); border:2px dashed rgba(16,185,129,0.4); border-radius:var(--radius); padding:20px 24px; text-align:center; max-width:700px; margin:0 auto; animation:shimmer-border 3s infinite; }
-        @keyframes shimmer-border { 0%,100%{ border-color:rgba(16,185,129,0.4); } 50%{ border-color:rgba(16,185,129,0.8); } }
-        .guarantee-banner h3 { color:#34d399; font-size:17px; margin-bottom:4px; }
-        .guarantee-banner p { color:var(--gray); font-size:13px; margin:0; }
+        .guarantee-banner {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(5, 150, 105, 0.08) 100%);
+            border: 2px dashed rgba(16, 185, 129, 0.4);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            animation: shimmer-border 3s infinite;
+        }
+        @keyframes shimmer-border {
+            0%,
+            100% {
+                border-color: rgba(16, 185, 129, 0.4);
+            }
+            50% {
+                border-color: rgba(16, 185, 129, 0.8);
+            }
+        }
+        .guarantee-banner h3 {
+            color: #34d399;
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+        .guarantee-banner p {
+            color: var(--gray);
+            font-size: 13px;
+            margin: 0;
+        }
 
         /* Sections */
-        .bg-dark-card { background:var(--bg-section); }
-        .courses-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:18px; }
-        .course-card { background:var(--dark-card); border-radius:var(--radius); overflow:hidden; transition:var(--transition); border:1px solid rgba(255,255,255,0.05); cursor:pointer; }
-        .course-card:hover { transform:translateY(-6px); border-color:rgba(37,99,235,0.4); box-shadow:var(--shadow-glow); }
-        .course-card .course-img-wrap { position:relative; height:140px; overflow:hidden; background:#1a2744; }
-        .course-card .course-img-wrap img { width:100%; height:100%; object-fit:cover; transition:transform 0.5s; }
-        .course-card:hover .course-img-wrap img { transform:scale(1.08); }
-        .course-card .course-badge { position:absolute; top:10px; right:10px; background:rgba(0,0,0,0.7); color:#fbbf24; font-size:10px; font-weight:700; padding:4px 10px; border-radius:20px; letter-spacing:0.4px; }
-        .course-card .course-content { padding:14px 16px; }
-        .course-card .course-content h3 { font-size:14px; font-weight:700; margin-bottom:4px; letter-spacing:-0.2px; }
-        .course-card .course-content p { font-size:11px; color:var(--gray); line-height:1.4; }
+        .bg-dark-card {
+            background: var(--bg-section);
+        }
+        .courses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 18px;
+        }
+        .course-card {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            cursor: pointer;
+        }
+        .course-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(37, 99, 235, 0.4);
+            box-shadow: var(--shadow-glow);
+        }
+        .course-card .course-img-wrap {
+            position: relative;
+            height: 140px;
+            overflow: hidden;
+            background: #1a2744;
+        }
+        .course-card .course-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        .course-card:hover .course-img-wrap img {
+            transform: scale(1.08);
+        }
+        .course-card .course-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fbbf24;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            letter-spacing: 0.4px;
+        }
+        .course-card .course-content {
+            padding: 14px 16px;
+        }
+        .course-card .course-content h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.2px;
+        }
+        .course-card .course-content p {
+            font-size: 11px;
+            color: var(--gray);
+            line-height: 1.4;
+        }
 
-        .benefits-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(170px,1fr)); gap:14px; }
-        .benefit-card { background:var(--dark-card); border-radius:var(--radius); padding:20px 16px; text-align:center; border:1px solid rgba(255,255,255,0.04); transition:var(--transition); }
-        .benefit-card:hover { transform:translateY(-4px); border-color:rgba(37,99,235,0.3); box-shadow:var(--shadow-sm); }
-        .benefit-card .benefit-icon { width:48px; height:48px; border-radius:14px; display:flex; align-items:center; justify-content:center; margin:0 auto 12px; font-size:22px; }
-        .benefit-card h4 { font-size:13px; font-weight:700; margin-bottom:4px; }
-        .benefit-card p { font-size:11px; color:var(--gray); line-height:1.4; }
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 14px;
+        }
+        .benefit-card {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            padding: 20px 16px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: var(--transition);
+        }
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(37, 99, 235, 0.3);
+            box-shadow: var(--shadow-sm);
+        }
+        .benefit-card .benefit-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 12px;
+            font-size: 22px;
+        }
+        .benefit-card h4 {
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .benefit-card p {
+            font-size: 11px;
+            color: var(--gray);
+            line-height: 1.4;
+        }
 
-        .plans-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:20px; }
-        .plan-card { background:var(--dark-card); border-radius:var(--radius-lg); padding:24px 18px; text-align:center; border:1px solid rgba(255,255,255,0.06); transition:var(--transition); position:relative; }
-        .plan-card:hover { transform:translateY(-6px); border-color:rgba(37,99,235,0.4); box-shadow:var(--shadow-glow); }
-        .plan-card.featured { border:2px solid var(--accent); box-shadow:var(--shadow-gold); background:linear-gradient(180deg, rgba(245,158,11,0.08) 0%, var(--dark-card) 30%); }
-        .plan-card.featured::before { content:'⭐ MOST POPULAR'; position:absolute; top:-13px; left:50%; transform:translateX(-50%); background:linear-gradient(135deg,#f59e0b,#d97706); color:#0f172a; padding:5px 16px; border-radius:50px; font-size:10px; font-weight:800; letter-spacing:0.5px; white-space:nowrap; }
-        .plan-name { font-weight:700; font-size:16px; margin-bottom:6px; }
-        .plan-price { font-size:38px; font-weight:800; color:var(--gold); letter-spacing:-1px; }
-        .plan-price small { font-size:16px; font-weight:500; color:var(--gray); }
-        .plan-duration { font-size:13px; color:var(--gray-light); margin-bottom:10px; }
-        .plan-commission { background:rgba(245,158,11,0.1); padding:8px 10px; border-radius:10px; font-size:11px; color:#fcd34d; margin:8px 0; font-weight:600; }
-        .plan-btn { display:inline-block; width:100%; padding:11px; border-radius:50px; font-weight:700; font-size:13px; cursor:pointer; border:none; transition:var(--transition); margin-top:8px; letter-spacing:0.3px; }
-        .plan-btn.primary-btn { background:linear-gradient(135deg,#2563eb,#1d4ed8); color:#fff; }
-        .plan-btn.accent-btn { background:linear-gradient(135deg,#f59e0b,#d97706); color:#0f172a; }
-        .plan-btn:hover { transform:translateY(-2px); box-shadow:0 8px 20px rgba(0,0,0,0.3); }
+        .plans-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .plan-card {
+            background: var(--dark-card);
+            border-radius: var(--radius-lg);
+            padding: 24px 18px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            transition: var(--transition);
+            position: relative;
+        }
+        .plan-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(37, 99, 235, 0.4);
+            box-shadow: var(--shadow-glow);
+        }
+        .plan-card.featured {
+            border: 2px solid var(--accent);
+            box-shadow: var(--shadow-gold);
+            background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, var(--dark-card) 30%);
+        }
+        .plan-card.featured::before {
+            content: '⭐ MOST POPULAR';
+            position: absolute;
+            top: -13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+            padding: 5px 16px;
+            border-radius: 50px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .plan-name {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+        .plan-price {
+            font-size: 38px;
+            font-weight: 800;
+            color: var(--gold);
+            letter-spacing: -1px;
+        }
+        .plan-price small {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--gray);
+        }
+        .plan-duration {
+            font-size: 13px;
+            color: var(--gray-light);
+            margin-bottom: 10px;
+        }
+        .plan-commission {
+            background: rgba(245, 158, 11, 0.1);
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-size: 11px;
+            color: #fcd34d;
+            margin: 8px 0;
+            font-weight: 600;
+        }
+        .plan-btn {
+            display: inline-block;
+            width: 100%;
+            padding: 11px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            margin-top: 8px;
+            letter-spacing: 0.3px;
+        }
+        .plan-btn.primary-btn {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: #fff;
+        }
+        .plan-btn.accent-btn {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: #0f172a;
+        }
+        .plan-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
 
-        .referral-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:18px; }
-        .referral-card { background:var(--dark-card); border-radius:var(--radius); padding:22px 18px; text-align:center; border:1px solid rgba(255,255,255,0.05); transition:var(--transition); }
-        .referral-card:hover { transform:translateY(-4px); border-color:rgba(245,158,11,0.4); }
-        .referral-card .ref-icon { font-size:38px; margin-bottom:10px; }
-        .referral-card .ref-amount { font-size:30px; font-weight:800; color:var(--gold); }
-        .referral-card .ref-label { font-size:13px; color:var(--gray); }
+        .referral-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+        .referral-card {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            padding: 22px 18px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+        .referral-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(245, 158, 11, 0.4);
+        }
+        .referral-card .ref-icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+        .referral-card .ref-amount {
+            font-size: 30px;
+            font-weight: 800;
+            color: var(--gold);
+        }
+        .referral-card .ref-label {
+            font-size: 13px;
+            color: var(--gray);
+        }
 
-        .weekly-bonus-card { background:linear-gradient(135deg, rgba(245,158,11,0.12) 0%, rgba(217,119,6,0.06) 100%); border:1px solid rgba(245,158,11,0.3); border-radius:var(--radius); padding:20px; text-align:center; transition:var(--transition); }
-        .weekly-bonus-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-gold); }
-        .weekly-bonus-card .bonus-amount { font-size:26px; font-weight:800; color:#fbbf24; }
+        .weekly-bonus-card {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(217, 119, 6, 0.06) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+            border-radius: var(--radius);
+            padding: 20px;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .weekly-bonus-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-gold);
+        }
+        .weekly-bonus-card .bonus-amount {
+            font-size: 26px;
+            font-weight: 800;
+            color: #fbbf24;
+        }
 
-        .form-card { background:var(--dark-card); border-radius:var(--radius-lg); padding:28px; border:1px solid rgba(255,255,255,0.06); max-width:720px; margin:0 auto; }
-        .form-control { width:100%; padding:13px 16px; background:rgba(15,23,42,0.8); border:1px solid rgba(255,255,255,0.1); border-radius:12px; color:#fff; margin-bottom:12px; font-size:14px; transition:var(--transition); font-family:inherit; }
-        .form-control:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 4px rgba(37,99,235,0.12); }
-        .form-control::placeholder { color:#64748b; }
-        select.form-control { appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; padding-right:40px; }
-        .referral-status { font-size:12px; padding:6px 12px; border-radius:20px; display:inline-block; font-weight:600; margin-bottom:8px; }
-        .status-valid { color:#34d399; background:rgba(16,185,129,0.2); }
-        .status-invalid { color:#f87171; background:rgba(239,68,68,0.2); }
-        .terms-row { display:flex; align-items:flex-start; gap:10px; margin:14px 0; font-size:13px; color:var(--gray); }
-        .terms-row input { width:18px; height:18px; cursor:pointer; accent-color:var(--primary); margin-top:2px; flex-shrink:0; }
-        .terms-row a { color:#60a5fa; text-decoration:none; font-weight:600; }
+        .form-card {
+            background: var(--dark-card);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .form-control {
+            width: 100%;
+            padding: 13px 16px;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 14px;
+            transition: var(--transition);
+            font-family: inherit;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+        }
+        .form-control::placeholder {
+            color: #64748b;
+        }
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 14px center;
+            padding-right: 40px;
+        }
+        .referral-status {
+            font-size: 12px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .status-valid {
+            color: #34d399;
+            background: rgba(16, 185, 129, 0.2);
+        }
+        .status-invalid {
+            color: #f87171;
+            background: rgba(239, 68, 68, 0.2);
+        }
+        .terms-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 14px 0;
+            font-size: 13px;
+            color: var(--gray);
+        }
+        .terms-row input {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            accent-color: var(--primary);
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+        .terms-row a {
+            color: #60a5fa;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-        .faq-item { background:var(--dark-card); border-radius:var(--radius); padding:18px 20px; margin-bottom:10px; border:1px solid rgba(255,255,255,0.04); transition:var(--transition); cursor:pointer; }
-        .faq-item:hover { border-color:rgba(255,255,255,0.15); }
-        .faq-item h3 { font-size:15px; font-weight:700; margin-bottom:4px; display:flex; align-items:center; gap:8px; }
-        .faq-item p { font-size:13px; color:var(--gray); }
+        .faq-item {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            padding: 18px 20px;
+            margin-bottom: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        .faq-item:hover {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+        .faq-item h3 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-item p {
+            font-size: 13px;
+            color: var(--gray);
+        }
 
-        .testimonial-card { background:var(--dark-card); border-radius:var(--radius); padding:22px; border:1px solid rgba(255,255,255,0.04); transition:var(--transition); }
-        .testimonial-card:hover { transform:translateY(-4px); border-color:rgba(37,99,235,0.3); }
-        .testimonial-card .quote-icon { color:var(--primary); font-size:28px; margin-bottom:8px; }
-        .testimonial-card p { font-size:14px; color:var(--gray-light); line-height:1.6; margin-bottom:10px; }
-        .testimonial-card .author { font-weight:700; font-size:14px; }
-        .testimonial-card .author-role { font-size:11px; color:var(--gray); }
+        .testimonial-card {
+            background: var(--dark-card);
+            border-radius: var(--radius);
+            padding: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: var(--transition);
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(37, 99, 235, 0.3);
+        }
+        .testimonial-card .quote-icon {
+            color: var(--primary);
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .testimonial-card p {
+            font-size: 14px;
+            color: var(--gray-light);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .testimonial-card .author {
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .testimonial-card .author-role {
+            font-size: 11px;
+            color: var(--gray);
+        }
 
         /* Ads */
-        .ads-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(190px,1fr)); gap:20px; }
-        .ad-card { background:var(--dark-card); border-radius:16px; overflow:hidden; cursor:pointer; transition:var(--transition); border:1px solid rgba(255,255,255,0.05); }
-        .ad-card:hover { transform:translateY(-5px); border-color:var(--accent); }
-        .ad-card img { width:100%; height:130px; object-fit:cover; }
-        .ad-content { padding:14px; }
-        .ad-price { font-size:20px; font-weight:800; color:var(--accent); }
+        .ads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+            gap: 20px;
+        }
+        .ad-card {
+            background: var(--dark-card);
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .ad-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+        .ad-card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+        }
+        .ad-content {
+            padding: 14px;
+        }
+        .ad-price {
+            font-size: 20px;
+            font-weight: 800;
+            color: var(--accent);
+        }
 
         /* Modal */
-        .payment-modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); backdrop-filter:blur(12px); z-index:10002; align-items:center; justify-content:center; padding:20px; }
-        .modal-content { background:var(--dark-card); max-width:620px; width:100%; border-radius:var(--radius-xl); padding:28px; border:1px solid rgba(255,255,255,0.1); max-height:90vh; overflow-y:auto; }
-        .modal-close { background:none; border:none; color:#fff; font-size:28px; cursor:pointer; transition:var(--transition); width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; }
-        .modal-close:hover { background:rgba(255,255,255,0.1); }
-        .payment-option { background:rgba(37,99,235,0.1); border-radius:14px; padding:14px 16px; text-align:center; cursor:pointer; transition:var(--transition); border:1px solid rgba(255,255,255,0.08); font-weight:500; font-size:13px; flex:1; min-width:130px; }
-        .payment-option:hover { background:var(--primary); transform:translateY(-2px); border-color:var(--primary); }
-        .qr-img { max-width:200px; width:100%; border-radius:20px; display:block; margin:10px auto; background:#fff; padding:8px; box-shadow:0 4px 16px rgba(0,0,0,0.4); }
-        .copy-badge { font-size:10px; background:var(--accent); color:#0f172a; border-radius:20px; padding:3px 10px; margin-left:8px; font-weight:700; cursor:pointer; }
-
-        .whatsapp-float { position:fixed; bottom:24px; right:24px; background:#25D366; width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:28px; color:#fff; box-shadow:0 6px 20px rgba(37,211,102,0.4); z-index:999; text-decoration:none; transition:var(--transition); }
-        .whatsapp-float:hover { transform:scale(1.1); box-shadow:0 10px 28px rgba(37,211,102,0.6); }
-        .whatsapp-group-float { position:fixed; bottom:94px; right:24px; background:#075E54; width:48px; height:48px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:22px; color:#fff; box-shadow:0 4px 16px rgba(7,94,84,0.5); z-index:999; text-decoration:none; transition:var(--transition); animation:bounce-float 2s infinite; }
-        @keyframes bounce-float { 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-10px); } }
-        .whatsapp-group-float:hover { animation:none; transform:scale(1.1); }
-
-        .notification { position:fixed; top:90px; left:50%; transform:translateX(-50%); background:#1e293b; border-left:5px solid var(--primary); padding:14px 22px; border-radius:12px; z-index:10001; font-size:14px; box-shadow:0 8px 28px rgba(0,0,0,0.5); animation:slideDown 0.35s ease; max-width:90vw; text-align:center; }
-        @keyframes slideDown { from { transform:translateX(-50%) translateY(-20px); opacity:0; } to { transform:translateX(-50%) translateY(0); opacity:1; } }
-
-        footer { background:#060b16; padding:50px 0 24px; border-top:1px solid rgba(255,255,255,0.05); }
-        footer a { color:var(--gray); text-decoration:none; font-size:13px; transition:var(--transition); }
-        footer a:hover { color:#fff; }
-        .social-links a { display:inline-flex; width:40px; height:40px; background:rgba(255,255,255,0.05); border-radius:50%; align-items:center; justify-content:center; margin-right:8px; color:#fff; font-size:17px; text-decoration:none; transition:var(--transition); }
-        .social-links a:hover { background:var(--primary); transform:translateY(-3px); }
-
-        @media (max-width:900px) {
-            .hero-grid { grid-template-columns:1fr; text-align:center; }
-            .hero h1 { font-size:28px; }
-            .hero-badges { justify-content:center; }
-            .hero-cta-row { justify-content:center; }
-            .hero-floating-card { display:none; }
-            .nav-links { position:fixed; top:68px; left:-100%; width:100%; background:#0f172a; flex-direction:column; padding:24px; transition:0.3s; gap:6px; max-height:80vh; overflow-y:auto; border-bottom:1px solid rgba(255,255,255,0.1); }
-            .nav-links.active { left:0; }
-            .nav-links a { padding:12px 16px; font-size:14px; width:100%; border-radius:10px; }
-            .mobile-menu-btn { display:flex; }
-            .section-title { font-size:26px; }
-            .courses-grid { grid-template-columns:repeat(auto-fill, minmax(150px,1fr)); gap:12px; }
-            .plans-grid { grid-template-columns:repeat(2,1fr); gap:14px; }
-            .benefits-grid { grid-template-columns:repeat(2,1fr); }
-            .stats-strip { gap:10px; }
-            .stat-item { padding:10px 16px; font-size:12px; }
-            .whatsapp-group-float { bottom:84px; right:16px; width:42px; height:42px; font-size:18px; }
-            .whatsapp-float { bottom:16px; right:16px; width:48px; height:48px; font-size:24px; }
+        .payment-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            backdrop-filter: blur(12px);
+            z-index: 10002;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
-        @media (max-width:480px) {
-            .courses-grid { grid-template-columns:repeat(2,1fr); gap:10px; }
-            .course-card .course-img-wrap { height:100px; }
-            .course-card .course-content h3 { font-size:12px; }
-            .plans-grid { grid-template-columns:1fr 1fr; gap:10px; }
-            .plan-price { font-size:28px; }
-            .hero h1 { font-size:24px; }
-            section { padding:50px 0; }
+        .modal-content {
+            background: var(--dark-card);
+            max-width: 620px;
+            width: 100%;
+            border-radius: var(--radius-xl);
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+        .modal-close {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-close:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        .payment-option {
+            background: rgba(37, 99, 235, 0.1);
+            border-radius: 14px;
+            padding: 14px 16px;
+            text-align: center;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-weight: 500;
+            font-size: 13px;
+            flex: 1;
+            min-width: 130px;
+        }
+        .payment-option:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            border-color: var(--primary);
+        }
+        .qr-img {
+            max-width: 200px;
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+            margin: 10px auto;
+            background: #fff;
+            padding: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+        }
+        .copy-badge {
+            font-size: 10px;
+            background: var(--accent);
+            color: #0f172a;
+            border-radius: 20px;
+            padding: 3px 10px;
+            margin-left: 8px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: #25D366;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #fff;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.6);
+        }
+        .whatsapp-group-float {
+            position: fixed;
+            bottom: 94px;
+            right: 24px;
+            background: #075E54;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(7, 94, 84, 0.5);
+            z-index: 999;
+            text-decoration: none;
+            transition: var(--transition);
+            animation: bounce-float 2s infinite;
+        }
+        @keyframes bounce-float {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        .whatsapp-group-float:hover {
+            animation: none;
+            transform: scale(1.1);
+        }
+
+        .notification {
+            position: fixed;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1e293b;
+            border-left: 5px solid var(--primary);
+            padding: 14px 22px;
+            border-radius: 12px;
+            z-index: 10001;
+            font-size: 14px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+            animation: slideDown 0.35s ease;
+            max-width: 90vw;
+            text-align: center;
+        }
+        @keyframes slideDown {
+            from {
+                transform: translateX(-50%) translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        footer {
+            background: #060b16;
+            padding: 50px 0 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        footer a {
+            color: var(--gray);
+            text-decoration: none;
+            font-size: 13px;
+            transition: var(--transition);
+        }
+        footer a:hover {
+            color: #fff;
+        }
+        .social-links a {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            color: #fff;
+            font-size: 17px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .social-links a:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero-badges {
+                justify-content: center;
+            }
+            .hero-cta-row {
+                justify-content: center;
+            }
+            .hero-floating-card {
+                display: none;
+            }
+            .nav-links {
+                position: fixed;
+                top: 68px;
+                left: -100%;
+                width: 100%;
+                background: #0f172a;
+                flex-direction: column;
+                padding: 24px;
+                transition: 0.3s;
+                gap: 6px;
+                max-height: 80vh;
+                overflow-y: auto;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+            .nav-links.active {
+                left: 0;
+            }
+            .nav-links a {
+                padding: 12px 16px;
+                font-size: 14px;
+                width: 100%;
+                border-radius: 10px;
+            }
+            .mobile-menu-btn {
+                display: flex;
+            }
+            .section-title {
+                font-size: 26px;
+            }
+            .courses-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 12px;
+            }
+            .plans-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .stats-strip {
+                gap: 10px;
+            }
+            .stat-item {
+                padding: 10px 16px;
+                font-size: 12px;
+            }
+            .whatsapp-group-float {
+                bottom: 84px;
+                right: 16px;
+                width: 42px;
+                height: 42px;
+                font-size: 18px;
+            }
+            .whatsapp-float {
+                bottom: 16px;
+                right: 16px;
+                width: 48px;
+                height: 48px;
+                font-size: 24px;
+            }
+        }
+        @media (max-width: 480px) {
+            .courses-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .course-card .course-img-wrap {
+                height: 100px;
+            }
+            .course-card .course-content h3 {
+                font-size: 12px;
+            }
+            .plans-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+            .plan-price {
+                font-size: 28px;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            section {
+                padding: 50px 0;
+            }
         }
     </style>
 </head>
 <body>
 
     <!-- Floating WhatsApp -->
-    <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" class="whatsapp-group-float" target="_blank" title="Join WhatsApp Group"><i class="fas fa-users"></i></a>
-    <a href="https://wa.me/919985943961" class="whatsapp-float" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" class="whatsapp-group-float" target="_blank" title="Join WhatsApp Group" rel="noopener"><i class="fas fa-users"></i></a>
+    <a href="https://wa.me/919985943961" class="whatsapp-float" target="_blank" title="Chat on WhatsApp" rel="noopener"><i class="fab fa-whatsapp"></i></a>
 
     <!-- Header -->
     <header id="header">
@@ -286,7 +1222,7 @@
                     <a href="#register">Join</a>
                     <a href="#feedback">Feedback</a>
                     <a href="#faq">FAQ</a>
-                    <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank" class="nav-whatsapp"><i class="fab fa-whatsapp"></i> Group</a>
+                    <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank" class="nav-whatsapp" rel="noopener"><i class="fab fa-whatsapp"></i> Group</a>
                     <a href="https://earningsprogram777.github.io/mainlogin/loginpage" target="_self" class="nav-cta">Login</a>
                 </div>
             </nav>
@@ -302,7 +1238,7 @@
                     <span class="hero-badge badge-gold"><i class="fas fa-medal"></i> Work-Based Income</span>
                     <span class="hero-badge badge-blue"><i class="fas fa-globe"></i> Earn From Anywhere</span>
                 </div>
-                <h1>Learn <span class="gradient-text">29+ AI & Digital Skills</span> • Earn From Anywhere</h1>
+                <h1>Learn <span class="gradient-text">30+ AI & Digital Skills</span> • Earn From Anywhere</h1>
                 <p class="hero-desc">
                     <strong>🚀 MULTICONNECT</strong> — One platform for all your digital career needs.<br>
                     Master high-income skills, get freelancing projects, and earn through our <strong>work-based referral system</strong>. Just 2 hours daily can change your future!
@@ -313,10 +1249,10 @@
                 </div>
                 <div class="hero-cta-row">
                     <a href="#register" class="btn btn-accent btn-lg"><i class="fas fa-rocket"></i> Join Now — Start Earning</a>
-                    <a href="#courses" class="btn btn-outline btn-lg"><i class="fas fa-book-open"></i> Explore 29+ Courses</a>
+                    <a href="#courses" class="btn btn-outline btn-lg"><i class="fas fa-book-open"></i> Explore 30+ Courses</a>
                 </div>
                 <div class="stats-strip">
-                    <div class="stat-item"><i class="fas fa-users"></i> 500+ Active Learners</div>
+                    <div class="stat-item"><i class="fas fa-users"></i> 100+ Active Learners</div>
                     <div class="stat-item"><i class="fas fa-graduation-cap"></i> 30+ Premium Courses</div>
                     <div class="stat-item"><i class="fas fa-rupee-sign"></i> Work-Based Income</div>
                 </div>
@@ -356,7 +1292,7 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
+    <!-- Courses Section (35 unique courses, no duplicates, all with proper structure & fresh images) -->
     <section id="courses">
         <div class="container">
             <div class="text-center" data-aos="fade-up">
@@ -365,35 +1301,43 @@
                 <p class="section-subtitle mx-auto">One-time registration — lifetime access to Dashboard & courses</p>
             </div>
             <div class="courses-grid" style="margin-top:32px;">
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Digital Marketing" loading="lazy"><span class="course-badge">🔥 Top</span></div><div class="course-content"><h3>Digital Marketing Mastery</h3><p>Complete digital marketing strategy</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400" alt="Affiliate Marketing" loading="lazy"></div><div class="course-content"><h3>Affiliate Marketing</h3><p>Earn commissions promoting products</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400" alt="Social Media" loading="lazy"><span class="course-badge">⭐ Popular</span></div><div class="course-content"><h3>Social Media Marketing</h3><p>Grow brands on all platforms</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400" alt="Instagram Growth" loading="lazy"></div><div class="course-content"><h3>Instagram Growth Strategy</h3><p>Reels, engagement & monetization</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=400" alt="Facebook Ads" loading="lazy"></div><div class="course-content"><h3>Facebook Ads & Meta Ads</h3><p>Run profitable ad campaigns</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400" alt="Google Ads" loading="lazy"></div><div class="course-content"><h3>Google Ads</h3><p>Search, display & video ads</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?w=400" alt="YouTube Marketing" loading="lazy"></div><div class="course-content"><h3>YouTube Marketing</h3><p>Grow & monetize your channel</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400" alt="Content Marketing" loading="lazy"></div><div class="course-content"><h3>Content Marketing</h3><p>Create content that converts</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400" alt="Canva Designing" loading="lazy"></div><div class="course-content"><h3>Canva Designing</h3><p>Professional graphics easily</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" alt="AI Tools" loading="lazy"><span class="course-badge">🤖 AI</span></div><div class="course-content"><h3>AI Tools Training</h3><p>Master the latest AI tools</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1676299081847-8249165e04a1?w=400" alt="ChatGPT" loading="lazy"></div><div class="course-content"><h3>ChatGPT & AI Automation</h3><p>Prompt engineering & workflows</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400" alt="Website Creation" loading="lazy"></div><div class="course-content"><h3>Website Creation</h3><p>Build websites without coding</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=400" alt="SEO" loading="lazy"></div><div class="course-content"><h3>SEO (Search Engine Optimization)</h3><p>Rank websites on Google</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400" alt="Email Marketing" loading="lazy"></div><div class="course-content"><h3>Email Marketing</h3><p>Build lists & automate campaigns</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=400" alt="WhatsApp Marketing" loading="lazy"></div><div class="course-content"><h3>WhatsApp Marketing</h3><p>Business via WhatsApp</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400" alt="Freelancing" loading="lazy"></div><div class="course-content"><h3>Freelancing Training</h3><p>Start your freelance career</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400" alt="E-commerce" loading="lazy"><span class="course-badge">💰</span></div><div class="course-content"><h3>E-commerce Business</h3><p>Sell products online</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400" alt="Personal Branding" loading="lazy"></div><div class="course-content"><h3>Personal Branding</h3><p>Build your online presence</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400" alt="Video Editing" loading="lazy"></div><div class="course-content"><h3>Reels & Video Editing</h3><p>Create viral video content</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Lead Generation" loading="lazy"></div><div class="course-content"><h3>Lead Generation</h3><p>Generate quality leads</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400" alt="Blogging" loading="lazy"></div><div class="course-content"><h3>Blogging</h3><p>Start & monetize your blog</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400" alt="Influencer Marketing" loading="lazy"></div><div class="course-content"><h3>Influencer Marketing</h3><p>Collaborate & grow</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400" alt="Online Earning" loading="lazy"></div><div class="course-content"><h3>Online Earning Methods</h3><p>Multiple income streams</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Sales Funnel" loading="lazy"></div><div class="course-content"><h3>Sales Funnel Creation</h3><p>Convert visitors to customers</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400" alt="Business Growth" loading="lazy"></div><div class="course-content"><h3>Business Growth Strategies</h3><p>Scale your business</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=400" alt="Passive Income" loading="lazy"></div><div class="course-content"><h3>Passive Income Methods</h3><p>Earn while you sleep</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400" alt="Digital Skills" loading="lazy"></div><div class="course-content"><h3>High Income Digital Skills</h3><p>Skills that pay well</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400" alt="Online Business" loading="lazy"></div><div class="course-content"><h3>Online Business Setup</h3><p>Start from scratch</p></div></div>
-                <div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="More Courses" loading="lazy"><span class="course-badge">📚</span></div><div class="course-content"><h3>And Many More...</h3><p>New courses added regularly</p></div></div>
+
+                <!-- 1 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400" alt="Digital Marketing" loading="lazy"><span class="course-badge">🔥 Top</span></div><div class="course-content"><h3>Digital Marketing Mastery</h3><p>Complete digital marketing strategy</p></div></div>
+                <!-- 2 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400" alt="Affiliate Marketing" loading="lazy"></div><div class="course-content"><h3>Affiliate Marketing</h3><p>Earn commissions promoting products</p></div></div>
+                <!-- 3 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1683721003111-070bcc053d8b?q=80&w=1100&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="Social Media" loading="lazy"><span class="course-badge">⭐ Popular</span></div><div class="course-content"><h3>Social Media Marketing</h3><p>Grow brands on all platforms</p></div></div>
+                <!-- 4 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1675352161918-2dc701738691?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="Instagram Growth" loading="lazy"></div><div class="course-content"><h3>Instagram Growth Strategy</h3><p>Reels, engagement & monetization</p></div></div>
+                <!-- 5 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1636114673156-052a83459fc1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="Facebook Ads" loading="lazy"></div><div class="course-content"><h3>Facebook Ads & Meta Ads</h3><p>Run profitable ad campaigns</p></div></div>
+                <!-- 6 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400" alt="Google Ads" loading="lazy"></div><div class="course-content"><h3>Google Ads</h3><p>Search, display & video ads</p></div></div>
+                <!-- 7 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="YouTube Marketing" loading="lazy"></div><div class="course-content"><h3>YouTube Marketing</h3><p>Grow & monetize your channel</p></div></div>
+                <!-- 8 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400" alt="Content Marketing" loading="lazy"></div><div class="course-content"><h3>Content Marketing</h3><p>Create content that converts</p></div></div>
+                <!-- 9 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1729860649094-12000c94f4b0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="Canva Designing" loading="lazy"></div><div class="course-content"><h3>Canva Designing</h3><p>Professional graphics easily</p></div></div>
+                <!-- 10 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400" alt="AI Tools" loading="lazy"><span class="course-badge">🤖 AI</span></div><div class="course-content"><h3>AI Tools Training</h3><p>Master the latest AI tools</p></div></div>
+                <!-- 11 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400" alt="ChatGPT" loading="lazy"></div><div class="course-content"><h3>ChatGPT & AI Automation</h3><p>Prompt engineering & workflows</p></div></div>
+                <!-- 12 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=400" alt="Web Development" loading="lazy"></div><div class="course-content"><h3>Web Development</h3><p>HTML, CSS, JS — build websites & freelance</p></div></div>
+                <!-- 13 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?w=400" alt="SEO" loading="lazy"></div><div class="course-content"><h3>SEO (Search Engine Optimization)</h3><p>Rank websites on Google</p></div></div>
+                <!-- 14 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400" alt="Email Marketing" loading="lazy"></div><div class="course-content"><h3>Email Marketing</h3><p>Build lists & automate campaigns</p></div></div>
+                <!-- 15 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1678329886668-6f44024b9ae6?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?w=400" alt="WhatsApp Marketing" loading="lazy"></div><div class="course-content"><h3>WhatsApp Marketing</h3><p>Business via WhatsApp</p></div></div>
+                <!-- 16 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400" alt="Freelancing" loading="lazy"></div><div class="course-content"><h3>Freelancing Training</h3><p>Start your freelance career</p></div></div>
+                <!-- 17 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=400" alt="E-commerce" loading="lazy"><span class="course-badge">💰</span></div><div class="course-content"><h3>E-commerce Business</h3><p>Sell products online</p></div></div>
+                <!-- 18 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400" alt="Personal Branding" loading="lazy"></div><div class="course-content"><h3>Personal Branding</h3><p>Build your online presence</p></div></div>
+                <!-- 19 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=400" alt="Video Editing" loading="lazy"></div><div class="course-content"><h3>Reels & Video Editing</h3><p>Create viral video content</p></div></div>
+                <!-- 20 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Lead Generation" loading="lazy"></div><div class="course-content"><h3>Lead Generation</h3><p>Generate quality leads</p></div></div>
+                <!-- 21 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=400" alt="Blogging" loading="lazy"></div><div class="course-content"><h3>Blogging</h3><p>Start & monetize your blog</p></div></div>
+                <!-- 22 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=400" alt="Influencer Marketing" loading="lazy"></div><div class="course-content"><h3>Influencer Marketing</h3><p>Collaborate & grow</p></div></div>
+                <!-- 23 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400" alt="Online Earning" loading="lazy"></div><div class="course-content"><h3>Online Earning Methods</h3><p>Multiple income streams</p></div></div>
+                <!-- 24 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400" alt="Sales Funnel" loading="lazy"></div><div class="course-content"><h3>Sales Funnel Creation</h3><p>Convert visitors to customers</p></div></div>
+                <!-- 25 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=400" alt="Business Growth" loading="lazy"></div><div class="course-content"><h3>Business Growth Strategies</h3><p>Scale your business</p></div></div>
+                <!-- 26 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?w=400" alt="Passive Income" loading="lazy"></div><div class="course-content"><h3>Passive Income Methods</h3><p>Earn while you sleep</p></div></div>
+                <!-- 27 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400" alt="Digital Skills" loading="lazy"></div><div class="course-content"><h3>High Income Digital Skills</h3><p>Skills that pay well</p></div></div>
+                <!-- 28 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400" alt="Online Business" loading="lazy"></div><div class="course-content"><h3>Online Business Setup</h3><p>Start from scratch</p></div></div>
+                <!-- 29 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400" alt="Stock Market" loading="lazy"></div><div class="course-content"><h3>Stock Market Basics</h3><p>Trading, investing & technical analysis</p></div></div>
+                <!-- 30 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=400" alt="Books Library" loading="lazy"></div><div class="course-content"><h3>100+ Books Library</h3><p>Self-help, finance, business & more</p></div></div>
+                <!-- 31 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400" alt="Python Programming" loading="lazy"></div><div class="course-content"><h3>Python Programming</h3><p>Automation, scripts & data analysis</p></div></div>
+                <!-- 32 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400" alt="Jobs Support" loading="lazy"></div><div class="course-content"><h3>Part-Time Job Support</h3><p>Freelancing, data entry & referrals</p></div></div>
+                <!-- 33 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?w=400" alt="Digital Products" loading="lazy"></div><div class="course-content"><h3>Digital Products Business</h3><p>Create & sell ebooks, courses, templates</p></div></div>
+                <!-- 34 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400" alt="Website Designing" loading="lazy"></div><div class="course-content"><h3>Website Designing</h3><p>Figma, WordPress, Elementor & UI trends</p></div></div>
+                <!-- 35 --><div class="course-card" data-aos="fade-up"><div class="course-img-wrap"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400" alt="More Courses" loading="lazy"><span class="course-badge">📚</span></div><div class="course-content"><h3>And Many More...</h3><p>New courses added regularly</p></div></div>
+
             </div>
         </div>
     </section>
@@ -407,7 +1351,7 @@
             </div>
             <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;max-width:900px;margin:32px auto 0;">
                 <div style="text-align:center;" data-aos="fade-up" data-aos-delay="0"><div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#2563eb,#1d4ed8);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;color:#fff;">1</div><h4 style="font-size:15px;">Register & Pay</h4><p style="font-size:12px;color:var(--gray);">Choose your plan & complete payment</p></div>
-                <div style="text-align:center;" data-aos="fade-up" data-aos-delay="100"><div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;color:#0f172a;">2</div><h4 style="font-size:15px;">Get Access</h4><p style="font-size:12px;color:var(--gray);">Lifetime access to all 29+ courses</p></div>
+                <div style="text-align:center;" data-aos="fade-up" data-aos-delay="100"><div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;color:#0f172a;">2</div><h4 style="font-size:15px;">Get Access</h4><p style="font-size:12px;color:var(--gray);">Lifetime access to all 30+ courses</p></div>
                 <div style="text-align:center;" data-aos="fade-up" data-aos-delay="200"><div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#10b981,#059669);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;color:#fff;">3</div><h4 style="font-size:15px;">Learn & Earn</h4><p style="font-size:12px;color:var(--gray);">Learn skills + earn via referrals</p></div>
                 <div style="text-align:center;" data-aos="fade-up" data-aos-delay="300"><div style="width:60px;height:60px;border-radius:50%;background:linear-gradient(135deg,#8b5cf6,#7c3aed);display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;color:#fff;">4</div><h4 style="font-size:15px;">Withdraw Earnings</h4><p style="font-size:12px;color:var(--gray);">Min ₹20 — processed in 30 mins</p></div>
             </div>
@@ -438,7 +1382,7 @@
                     <div class="plan-name">⭐ Pro</div>
                     <div class="plan-price">₹499</div>
                     <div class="plan-duration">8 Months Access</div>
-                    <div class="plan-commission">L1:₹170 | L2:₹80 | L3:₹50</div>
+                    <div class="plan-commission">L1:₹250 | L2:₹80 | L3:₹50</div>
                     <button class="plan-btn accent-btn" onclick="openPaymentModal('499','Pro Plan (₹499)')"><i class="fas fa-credit-card"></i> Pay Now</button>
                 </div>
                 <div class="plan-card" data-aos="fade-up" data-aos-delay="200">
@@ -452,7 +1396,7 @@
                     <div class="plan-name">👑 Lifetime</div>
                     <div class="plan-price">₹1499</div>
                     <div class="plan-duration">Lifetime Access</div>
-                    <div class="plan-commission">L1:₹500 | L2:₹240 | L3:₹150</div>
+                    <div class="plan-commission">L1:₹600 | L2:₹240 | L3:₹150</div>
                     <button class="plan-btn primary-btn" onclick="openPaymentModal('1499','Lifetime Plan (₹1499)')"><i class="fas fa-credit-card"></i> Pay Now</button>
                 </div>
             </div>
@@ -468,7 +1412,7 @@
                 <p class="section-subtitle mx-auto">Courses are the main product. Referral income is your <strong>effort-based bonus</strong> — the more you work, the more you earn!</p>
             </div>
             <div class="referral-grid" style="margin-top:28px;">
-                <div class="referral-card" data-aos="fade-up"><div class="ref-icon">👤</div><h4>Level 1</h4><div class="ref-amount">₹100–500</div><p class="ref-label">Direct referral bonus per sign-up</p></div>
+                <div class="referral-card" data-aos="fade-up"><div class="ref-icon">👤</div><h4>Level 1</h4><div class="ref-amount">₹100–600</div><p class="ref-label">Direct referral bonus per sign-up</p></div>
                 <div class="referral-card" data-aos="fade-up" data-aos-delay="100"><div class="ref-icon">👥</div><h4>Level 2</h4><div class="ref-amount">₹50–240</div><p class="ref-label">Team referral bonus</p></div>
                 <div class="referral-card" data-aos="fade-up" data-aos-delay="200"><div class="ref-icon">🌐</div><h4>Level 3</h4><div class="ref-amount">₹30–150</div><p class="ref-label">Network passive bonus</p></div>
             </div>
@@ -530,11 +1474,11 @@
                     </div>
                     <select id="planSelect" class="form-control">
                         <option value="299">₹299 (Starter - 4 months) — L1:100 L2:50 L3:30</option>
-                        <option value="499">₹499 (Pro - 8 months) — L1:170 L2:80 L3:50</option>
+                        <option value="499">₹499 (Pro - 8 months) — L1:250 L2:80 L3:50</option>
                         <option value="999">₹999 (Elite - 16 months) — L1:330 L2:160 L3:100</option>
-                        <option value="1499">₹1499 (Lifetime) — L1:500 L2:240 L3:150</option>
+                        <option value="1499">₹1499 (Lifetime) — L1:600 L2:240 L3:150</option>
                     </select>
-                    <input type="text" id="transactionId" class="form-control" placeholder="Transaction ID / Payment Reference Screenshot / UTR NO  *" required>
+                    <input type="text" id="transactionId" class="form-control" placeholder="Transaction ID / Payment Reference Screenshot / UTR NO *" required>
                     <input type="text" id="referralInput" class="form-control" placeholder="Referral Code * (Mandatory) [e.g., ADMIN]" required>
                     <div id="referralStatus" class="referral-status"></div>
                     <textarea id="goals" class="form-control" rows="2" placeholder="Your learning goals (optional)"></textarea>
@@ -621,7 +1565,7 @@
                 <h2 class="section-title">Frequently <span class="highlight">Asked Questions</span></h2>
             </div>
             <div style="max-width:750px;margin:24px auto 0;">
-                <div class="faq-item" data-aos="fade-up"><h3><i class="fas fa-question-circle" style="color:#60a5fa;"></i> What is MULTICONNECT?</h3><p>A platform offering <strong>29+ premium AI & Digital Marketing courses</strong> with a work-based referral earning system. Learn skills + earn while learning.</p></div>
+                <div class="faq-item" data-aos="fade-up"><h3><i class="fas fa-question-circle" style="color:#60a5fa;"></i> What is MULTICONNECT?</h3><p>A platform offering <strong>30+ premium AI & Digital Marketing courses</strong> with a work-based referral earning system. Learn skills + earn while learning.</p></div>
                 <div class="faq-item" data-aos="fade-up"><h3><i class="fas fa-shield-alt" style="color:#34d399;"></i> Is it 100% trusted?</h3><p>Yes! We have <strong>100+ active learners</strong> and a <strong>7-day money-back guarantee</strong>. If you can't earn a single rupee in 7 days, we refund 100%.</p></div>
                 <div class="faq-item" data-aos="fade-up"><h3><i class="fas fa-clock" style="color:#fbbf24;"></i> What is the withdrawal time?</h3><p>Minimum withdrawal is ₹20. Withdrawals are processed within <strong>30 minutes</strong>.</p></div>
                 <div class="faq-item" data-aos="fade-up"><h3><i class="fas fa-language" style="color:#a78bfa;"></i> In which language are the courses?</h3><p>Courses are in <strong>Telugu + English</strong> — easy step-by-step training for everyone.</p></div>
@@ -643,10 +1587,10 @@
                     <p style="margin-top:6px;"><strong>📧 Email:</strong> skillspherecodehub@gmail.com</p>
                     <p style="margin-top:6px;color:#34d399;"><i class="fas fa-undo-alt"></i> <strong>Money-Back Guarantee:</strong> No earnings in 7 days = full refund</p>
                     <div class="social-links" style="margin-top:16px;">
-                        <a href="https://www.instagram.com/skillsspherecodehub" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/919985943961" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank"><i class="fas fa-users"></i></a>
-                        <a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank"><i class="fas fa-bullhorn"></i></a>
+                        <a href="https://www.instagram.com/skillsspherecodehub" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919985943961" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank" rel="noopener"><i class="fas fa-users"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank" rel="noopener"><i class="fas fa-bullhorn"></i></a>
                         <a href="mailto:skillspherecodehub@gmail.com"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
@@ -717,57 +1661,76 @@
                     <p style="color:var(--gray);font-size:12px;">Learn • Earn • Grow<br>Work-Based Income</p>
                 </div>
                 <div><h4 style="margin-bottom:8px;">Quick Links</h4><a href="#home">Home</a><br><a href="#courses">Courses</a><br><a href="#plans">Plans</a><br><a href="#earn">Earn</a></div>
-                <div><h4 style="margin-bottom:8px;">Community</h4><a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank">WhatsApp Group</a><br><a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank">WhatsApp Channel</a><br><a href="https://www.instagram.com/skillsspherecodehub" target="_blank">Instagram</a></div>
+                <div><h4 style="margin-bottom:8px;">Community</h4><a href="https://chat.whatsapp.com/IuBf3yGwDef8nEMOAW9DiE" target="_blank" rel="noopener">WhatsApp Group</a><br><a href="https://whatsapp.com/channel/0029VbC2lLdK0IBag1Y3WC0s" target="_blank" rel="noopener">WhatsApp Channel</a><br><a href="https://www.instagram.com/skillsspherecodehub" target="_blank" rel="noopener">Instagram</a></div>
                 <div><h4 style="margin-bottom:8px;">Support</h4><p style="font-size:12px;"><i class="fas fa-phone"></i> +91 9985943961<br><i class="fas fa-envelope"></i> skillspherecodehub@gmail.com</p></div>
             </div>
             <hr style="margin:24px 0;border-color:rgba(255,255,255,0.05);">
-            <p style="text-align:center;color:var(--gray);font-size:11px;">© 2025 MULTICONNECT | All Rights Reserved | Learn 29+ AI & Digital Skills • Earn From Anywhere</p>
+            <p style="text-align:center;color:var(--gray);font-size:11px;">© 2025 MULTICONNECT | All Rights Reserved | Learn 30+ AI & Digital Skills • Earn From Anywhere</p>
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+    </script>
     <script>
         AOS.init({ duration: 600, once: true });
 
         // Header scroll effect
-        window.addEventListener('scroll', () => {
+        window.addEventListener('scroll', function() {
             document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
         });
 
         // Mobile menu
-        document.getElementById('mobileBtn')?.addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('active');
-        });
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => document.getElementById('navLinks')?.classList.remove('active'));
+        var mobileBtn = document.getElementById('mobileBtn');
+        var navLinks = document.getElementById('navLinks');
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        }
+        document.querySelectorAll('.nav-links a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                navLinks.classList.remove('active');
+            });
         });
 
         // Notification
         function showNotification(msg) {
-            const n = document.createElement('div');
+            var n = document.createElement('div');
             n.className = 'notification';
             n.innerText = msg;
             document.body.appendChild(n);
-            setTimeout(() => n.remove(), 3200);
+            setTimeout(function() { n.remove(); }, 3200);
         }
 
         // Copy functions
         function copyToClipboard(text) {
             if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(text).then(() => showNotification('✅ Copied: ' + text)).catch(() => fallbackCopy(text));
-            } else { fallbackCopy(text); }
+                navigator.clipboard.writeText(text).then(function() {
+                    showNotification('✅ Copied: ' + text);
+                }).catch(function() {
+                    fallbackCopy(text);
+                });
+            } else {
+                fallbackCopy(text);
+            }
         }
+
         function fallbackCopy(text) {
-            const ta = document.createElement('textarea');
+            var ta = document.createElement('textarea');
             ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
             document.body.appendChild(ta);
             ta.select();
             document.execCommand('copy');
             document.body.removeChild(ta);
             showNotification('✅ Copied: ' + text);
         }
+
         function copyAllPaymentDetails() { copyToClipboard('UPI IDs:\n9985943961@ybl\n9985943961@mbk\nPhone: 9985943961'); }
+
         function copyPhoneNumber() { copyToClipboard('9985943961'); }
+
         function openBigRedPayLink() {
             window.open('https://w6em.app.link/mRX2QTChG1b', '_blank');
             showNotification('🔴 Opening Payment Link...');
@@ -779,113 +1742,152 @@
             document.getElementById('planAmountDisplay').innerText = amount;
             document.getElementById('paymentModal').style.display = 'flex';
         }
+
         function closePaymentModal() { document.getElementById('paymentModal').style.display = 'none'; }
-        document.getElementById('paymentModal')?.addEventListener('click', function(e) {
-            if (e.target === this) closePaymentModal();
-        });
+        var paymentModal = document.getElementById('paymentModal');
+        if (paymentModal) {
+            paymentModal.addEventListener('click', function(e) {
+                if (e.target === paymentModal) closePaymentModal();
+            });
+        }
 
         // Load valid referral codes from Google Sheets (Column O - index 14)
-        let validReferralCodes = new Set();
-        async function loadReferralCodes() {
-            try {
-                const res = await fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0');
-                const text = await res.text();
-                const json = JSON.parse(text.substring(47).slice(0, -2));
-                const rows = json.table.rows || [];
-                for (let i = 1; i < rows.length; i++) {
-                    if (rows[i].c && rows[i].c[14] && rows[i].c[14].v) {
-                        let code = rows[i].c[14].v.toString().trim().toUpperCase();
-                        if (code) validReferralCodes.add(code);
+        var validReferralCodes = new Set();
+
+        function loadReferralCodes() {
+            fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0')
+                .then(function(res) { return res.text(); })
+                .then(function(text) {
+                    var json = JSON.parse(text.substring(47).slice(0, -2));
+                    var rows = json.table.rows || [];
+                    for (var i = 1; i < rows.length; i++) {
+                        if (rows[i].c && rows[i].c[14] && rows[i].c[14].v) {
+                            var code = rows[i].c[14].v.toString().trim().toUpperCase();
+                            if (code) validReferralCodes.add(code);
+                        }
                     }
-                }
-                console.log("✅ Referral codes loaded:", validReferralCodes.size);
-            } catch (e) { console.warn("⚠️ Could not load referral codes — using fallback"); }
+                    console.log("✅ Referral codes loaded:", validReferralCodes.size);
+                })
+                .catch(function(e) { console.warn("⚠️ Could not load referral codes — using fallback"); });
         }
         loadReferralCodes();
 
         // Referral validation
-        const referralInput = document.getElementById('referralInput');
-        const referralStatusDiv = document.getElementById('referralStatus');
+        var referralInput = document.getElementById('referralInput');
+        var referralStatusDiv = document.getElementById('referralStatus');
+
         function validateReferralCode() {
-            let code = referralInput.value.trim().toUpperCase();
-            if (code === "") { referralStatusDiv.innerHTML = ""; referralStatusDiv.className = "referral-status"; return false; }
+            var code = referralInput.value.trim().toUpperCase();
+            if (code === "") { referralStatusDiv.innerHTML = "";
+                referralStatusDiv.className = "referral-status"; return false; }
             if (validReferralCodes.has(code)) {
                 referralStatusDiv.innerHTML = "✅ Valid Referral Code!";
                 referralStatusDiv.className = "referral-status status-valid";
                 return true;
             } else {
-                referralStatusDiv.innerHTML = "❌ Invalid Referral Code. Please enter a valid code from an existing member.";
+                referralStatusDiv.innerHTML =
+                    "❌ Invalid Referral Code. Please enter a valid code from an existing member.";
                 referralStatusDiv.className = "referral-status status-invalid";
                 return false;
             }
         }
-        referralInput.addEventListener('input', validateReferralCode);
+        if (referralInput) {
+            referralInput.addEventListener('input', validateReferralCode);
+        }
 
         // Registration
-        document.getElementById('registerForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            if (!document.getElementById('termsCheckbox').checked) { showNotification("❌ Please accept Terms & Conditions."); return; }
-            let referralCode = referralInput.value.trim().toUpperCase();
-            if (!validReferralCodes.has(referralCode)) { showNotification("❌ Invalid or missing referral code. Enter a valid code from an existing member."); return; }
-            const fullName = document.getElementById('fullName').value.trim();
-            const age = document.getElementById('age').value;
-            const whatsapp = document.getElementById('whatsapp').value.trim();
-            const email = document.getElementById('email').value.trim() || 'Not provided';
-            const password = document.getElementById('password').value;
-            const location = document.getElementById('location').value.trim();
-            const qualification = document.getElementById('qualification').value;
-            const plan = document.getElementById('planSelect').value;
-            const transactionId = document.getElementById('transactionId').value.trim();
-            const goals = document.getElementById('goals').value.trim() || 'Not specified';
-            const finalCode = (fullName.slice(0, 3).toUpperCase() + whatsapp.slice(-4));
-            const timestamp = new Date().toLocaleString('en-IN');
-            const planMap = { '299': '₹299 Starter', '499': '₹499 Pro', '999': '₹999 Elite', '1499': '₹1499 Lifetime' };
-            if (!fullName || !age || whatsapp.length !== 10 || !location || !transactionId) { showNotification("❌ Please fill all required fields"); return; }
-            let message = `🎓 NEW REGISTRATION - MULTICONNECT\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan] || plan}\n💰 Transaction ID: ${transactionId}\n🔗 Referral Code: ${finalCode}\nReferred By: ${referralCode}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Terms Accepted: Yes`;
-            window.open(`https://wa.me/919985943961?text=${encodeURIComponent(message)}`, '_blank');
-            showNotification("✅ Registration sent! We'll activate within 1 hour.");
-        });
+        var registerForm = document.getElementById('registerForm');
+        if (registerForm) {
+            registerForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (!document.getElementById('termsCheckbox').checked) {
+                    showNotification("❌ Please accept Terms & Conditions.");
+                    return;
+                }
+                var referralCode = referralInput.value.trim().toUpperCase();
+                if (!validReferralCodes.has(referralCode)) {
+                    showNotification(
+                        "❌ Invalid or missing referral code. Enter a valid code from an existing member.");
+                    return;
+                }
+                var fullName = document.getElementById('fullName').value.trim();
+                var age = document.getElementById('age').value;
+                var whatsapp = document.getElementById('whatsapp').value.trim();
+                var email = document.getElementById('email').value.trim() || 'Not provided';
+                var password = document.getElementById('password').value;
+                var location = document.getElementById('location').value.trim();
+                var qualification = document.getElementById('qualification').value;
+                var plan = document.getElementById('planSelect').value;
+                var transactionId = document.getElementById('transactionId').value.trim();
+                var goals = document.getElementById('goals').value.trim() || 'Not specified';
+                var finalCode = (fullName.slice(0, 3).toUpperCase() + whatsapp.slice(-4));
+                var timestamp = new Date().toLocaleString('en-IN');
+                var planMap = { '299': '₹299 Starter', '499': '₹499 Pro', '999': '₹999 Elite',
+                    '1499': '₹1499 Lifetime' };
+                if (!fullName || !age || whatsapp.length !== 10 || !location || !transactionId) {
+                    showNotification("❌ Please fill all required fields");
+                    return;
+                }
+                var message = `🎓 NEW REGISTRATION - MULTICONNECT\n━━━━━━━━━━━━━━━━━━━━━\n👤 Name: ${fullName}\nAge: ${age}\nWhatsApp: +91 ${whatsapp}\nEmail: ${email}\nLocation: ${location}\nEducation: ${qualification}\n🔐 Password: ${password}\n📦 Plan: ${planMap[plan] || plan}\n💰 Transaction ID: ${transactionId}\n🔗 Referral Code: ${finalCode}\nReferred By: ${referralCode}\n🎯 Goals: ${goals}\n⏱️ Time: ${timestamp}\n✅ Terms Accepted: Yes`;
+                window.open('https://wa.me/919985943961?text=' + encodeURIComponent(message), '_blank');
+                showNotification("✅ Registration sent! We'll activate within 1 hour.");
+            });
+        }
 
         // Generate referral code
-        const nameField = document.getElementById('fullName');
-        const phoneField = document.getElementById('whatsapp');
-        const refBlock = document.getElementById('generatedRefBlock');
-        const refDisplay = document.getElementById('refCodeDisplay');
-        let currentRefCode = "";
+        var nameField = document.getElementById('fullName');
+        var phoneField = document.getElementById('whatsapp');
+        var refBlock = document.getElementById('generatedRefBlock');
+        var refDisplay = document.getElementById('refCodeDisplay');
+        var currentRefCode = "";
+
         function updateReferralCode() {
-            let name = nameField?.value.trim().toUpperCase().replace(/[^A-Z]/g, '').slice(0, 4);
-            let phone = phoneField?.value.trim().slice(-4);
+            var name = (nameField ? nameField.value.trim().toUpperCase().replace(/[^A-Z]/g, '').slice(0, 4) : '');
+            var phone = (phoneField ? phoneField.value.trim().slice(-4) : '');
             if (name && name.length >= 2 && phone && phone.length === 4) {
                 currentRefCode = name + phone;
                 refDisplay.innerText = currentRefCode;
                 refBlock.style.display = "block";
-            } else refBlock.style.display = "none";
+            } else {
+                refBlock.style.display = "none";
+            }
         }
-        nameField?.addEventListener('input', updateReferralCode);
-        phoneField?.addEventListener('input', updateReferralCode);
+        if (nameField) nameField.addEventListener('input', updateReferralCode);
+        if (phoneField) phoneField.addEventListener('input', updateReferralCode);
+
         function copyReferralCode() {
-            if (currentRefCode) { copyToClipboard(currentRefCode); showNotification("✅ Referral code copied! Share it to earn!"); } else showNotification("Generate code first by filling Name & WhatsApp");
+            if (currentRefCode) {
+                copyToClipboard(currentRefCode);
+                showNotification("✅ Referral code copied! Share it to earn!");
+            } else {
+                showNotification("Generate code first by filling Name & WhatsApp");
+            }
         }
 
         // Load Daily Offers (Ads)
-        async function loadAds() {
-            const container = document.getElementById('adsContainer');
+        function loadAds() {
+            var container = document.getElementById('adsContainer');
             if (!container) return;
-            try {
-                const res = await fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0');
-                const text = await res.text();
-                const json = JSON.parse(text.substring(47).slice(0, -2));
-                const rows = json.table.rows || [];
-                const ads = rows.slice(1).filter(r => r.c && r.c[0]?.v).map(r => ({
-                    title: r.c[0]?.v || '',
-                    desc: r.c[1]?.v || '',
-                    image: r.c[2]?.v || 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400',
-                    link: r.c[3]?.v || '#',
-                    price: r.c[4]?.v || '0',
-                    note: r.c[5]?.v || ''
-                }));
-                const shuffled = ads.sort(() => 0.5 - Math.random()).slice(0, 4);
-                container.innerHTML = shuffled.length ? shuffled.map(ad => `
+            fetch('https://docs.google.com/spreadsheets/d/1jWM5Xpxh4PbJJ6fQ5Mg0rnY6LgISG5sQXaxloKFPSEc/gviz/tq?tqx=out:json&tq&gid=0')
+                .then(function(res) { return res.text(); })
+                .then(function(text) {
+                    var json = JSON.parse(text.substring(47).slice(0, -2));
+                    var rows = json.table.rows || [];
+                    var ads = rows.slice(1).filter(function(r) { return r.c && r.c[0] && r.c[0].v; }).map(
+                        function(r) {
+                            return {
+                                title: r.c[0] ? r.c[0].v : '',
+                                desc: r.c[1] ? r.c[1].v : '',
+                                image: r.c[2] ? r.c[2].v :
+                                    'https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400',
+                                link: r.c[3] ? r.c[3].v : '#',
+                                price: r.c[4] ? r.c[4].v : '0',
+                                note: r.c[5] ? r.c[5].v : ''
+                            };
+                        });
+                    var shuffled = ads.sort(function() { return 0.5 - Math.random(); }).slice(0, 4);
+                    container.innerHTML = shuffled.length ? shuffled.map(function(ad) {
+                        return `
                     <div class="ad-card" onclick="window.open('${ad.link}','_blank')">
                         <img src="${ad.image}" onerror="this.src='https://images.unsplash.com/photo-1607083206968-13611e3d76db?w=400'" alt="${ad.title}">
                         <div class="ad-content">
@@ -895,60 +1897,81 @@
                             <small style="font-size:10px;color:var(--gray-light);">${ad.note}</small>
                         </div>
                     </div>
-                `).join('') : '<p style="text-align:center;color:var(--gray);">No offers right now – check back soon!</p>';
-            } catch (e) {
-                container.innerHTML = '<p style="text-align:center;color:var(--gray);">Offers loading...</p>';
-            }
+                `;
+                    }).join('') :
+                        '<p style="text-align:center;color:var(--gray);">No offers right now – check back soon!</p>';
+                })
+                .catch(function(e) {
+                    container.innerHTML =
+                        '<p style="text-align:center;color:var(--gray);">Offers loading...</p>';
+                });
         }
         loadAds();
 
         // Feedback form
-        document.getElementById('feedbackForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            let name = document.getElementById('fbName').value.trim();
-            let phone = document.getElementById('fbWhatsapp').value.trim();
-            let type = document.getElementById('fbType').value;
-            let msg = document.getElementById('fbMessage').value.trim();
-            if (!name || !phone || !msg) { showNotification("Please fill all fields"); return; }
-            let text = `📢 FEEDBACK\nName: ${name}\nWhatsApp: ${phone}\nType: ${type}\nMessage: ${msg}`;
-            window.open(`https://wa.me/919985943961?text=${encodeURIComponent(text)}`, '_blank');
-            showNotification("✅ Feedback sent!");
-            document.getElementById('feedbackForm').reset();
-        });
+        var feedbackForm = document.getElementById('feedbackForm');
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var name = document.getElementById('fbName').value.trim();
+                var phone = document.getElementById('fbWhatsapp').value.trim();
+                var type = document.getElementById('fbType').value;
+                var msg = document.getElementById('fbMessage').value.trim();
+                if (!name || !phone || !msg) { showNotification("Please fill all fields"); return; }
+                var text = `📢 FEEDBACK\nName: ${name}\nWhatsApp: ${phone}\nType: ${type}\nMessage: ${msg}`;
+                window.open('https://wa.me/919985943961?text=' + encodeURIComponent(text), '_blank');
+                showNotification("✅ Feedback sent!");
+                feedbackForm.reset();
+            });
+        }
 
         // Ad submission form
-        document.getElementById('adSubmitForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            let title = document.getElementById('adTitle').value.trim();
-            let desc = document.getElementById('adDesc').value.trim();
-            let image = document.getElementById('adImage').value.trim() || "Not provided";
-            let link = document.getElementById('adLink').value.trim();
-            let price = document.getElementById('adPrice').value.trim();
-            let contact = document.getElementById('adContact').value.trim();
-            let note = document.getElementById('adNote').value.trim() || "None";
-            if (!title || !desc || !link || !price || !contact) { showNotification("Fill required fields"); return; }
-            let adMsg = `📢 NEW AD SUBMISSION\nTitle: ${title}\nDesc: ${desc}\nImage: ${image}\nLink: ${link}\nPrice: ${price}\nContact: ${contact}\nNote: ${note}`;
-            window.open(`https://wa.me/919985943961?text=${encodeURIComponent(adMsg)}`, '_blank');
-            showNotification("✅ Ad submitted! We'll review it.");
-            document.getElementById('adSubmitForm').reset();
-        });
+        var adSubmitForm = document.getElementById('adSubmitForm');
+        if (adSubmitForm) {
+            adSubmitForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var title = document.getElementById('adTitle').value.trim();
+                var desc = document.getElementById('adDesc').value.trim();
+                var image = document.getElementById('adImage').value.trim() || "Not provided";
+                var link = document.getElementById('adLink').value.trim();
+                var price = document.getElementById('adPrice').value.trim();
+                var contact = document.getElementById('adContact').value.trim();
+                var note = document.getElementById('adNote').value.trim() || "None";
+                if (!title || !desc || !link || !price || !contact) { showNotification(
+                        "Fill required fields"); return; }
+                var adMsg =
+                    `📢 NEW AD SUBMISSION\nTitle: ${title}\nDesc: ${desc}\nImage: ${image}\nLink: ${link}\nPrice: ${price}\nContact: ${contact}\nNote: ${note}`;
+                window.open('https://wa.me/919985943961?text=' + encodeURIComponent(adMsg), '_blank');
+                showNotification("✅ Ad submitted! We'll review it.");
+                adSubmitForm.reset();
+            });
+        }
 
         // Contact form
-        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-            e.preventDefault();
-            let name = document.getElementById('contactName').value.trim();
-            let phone = document.getElementById('contactPhone').value.trim();
-            let msg = document.getElementById('contactMsg').value.trim();
-            let text = `📩 Contact from MULTICONNECT\nName: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
-            window.open(`https://wa.me/919985943961?text=${encodeURIComponent(text)}`, '_blank');
-            showNotification("✅ Message sent!");
-        });
+        var contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                var name = document.getElementById('contactName').value.trim();
+                var phone = document.getElementById('contactPhone').value.trim();
+                var msg = document.getElementById('contactMsg').value.trim();
+                var text =
+                    `📩 Contact from MULTICONNECT\nName: ${name}\nPhone: ${phone}\nMessage: ${msg}`;
+                window.open('https://wa.me/919985943961?text=' + encodeURIComponent(text), '_blank');
+                showNotification("✅ Message sent!");
+            });
+        }
 
         // Terms link
-        document.getElementById('termsLink')?.addEventListener('click', (e) => {
-            e.preventDefault();
-            alert("Terms & Conditions:\n\n1. Provide accurate information.\n2. Referral commissions are paid after verification.\n3. Withdrawals require minimum ₹20.\n4. Spamming or fake referrals will lead to account ban.\n5. 7-Day Money-Back Guarantee: If you earn ₹0 within 7 days, full refund is given.\n6. You agree to receive WhatsApp updates.\n7. Weekly bonuses are awarded based on referral performance.\n8. Courses are the main product; referral income is a work-based bonus.\n9. MULTICONNECT reserves the right to modify terms.");
-        });
+        var termsLink = document.getElementById('termsLink');
+        if (termsLink) {
+            termsLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert(
+                    "Terms & Conditions:\n\n1. Provide accurate information.\n2. Referral commissions are paid after verification.\n3. Withdrawals require minimum ₹20.\n4. Spamming or fake referrals will lead to account ban.\n5. 7-Day Money-Back Guarantee: If you earn ₹0 within 7 days, full refund is given.\n6. You agree to receive WhatsApp updates.\n7. Weekly bonuses are awarded based on referral performance.\n8. Courses are the main product; referral income is a work-based bonus.\n9. MULTICONNECT reserves the right to modify terms."
+                    );
+            });
+        }
     </script>
 </body>
 </html>
